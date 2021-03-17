@@ -1,0 +1,51 @@
+<!-- HTML prototype for the main page of the app -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;App Name&gt;</title>
+</head>
+
+<body>
+
+    <!-- a container div for all the content on the page -->
+    <div class="container">
+        <!-- navigation bar with logo, search bar and logout link -->
+        <header>
+            <nav>
+                <!-- add image with css -->
+                <a href="index.html" id="logo">Logo</a>
+                <input type="text" Placeholder="Search...">
+                <!-- add image with css -->
+                <a href="" id="logout">Logout</a>
+            </nav>
+        </header>
+
+        <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
+        <div id="sidebar">
+            <ul>
+                <li><a href="share.html">Share Photo</a></li>
+                <li><a href="mygroups.html">My Groups</a></li>
+                <li><a href="myaccount.html">My Account</a></li>
+                <li><a href="support.html">Support / Help</a></li>
+            </ul>
+        </div>
+
+        <!-- element for an individual post on the feed -->
+        <div class="post">
+            <div class="img">
+                <img src="" alt="Posted photo">
+            </div>
+            <div class="comment">
+                <button>Comment</button>
+                <button>Like</button>
+                <input type="text" placeholder="Write a comment">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
