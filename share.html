@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SharePhoto</title>
+</head>
+
+<body>
+
+    <!-- a container div for all the content on the page -->
+    <div class="container">
+        <!-- navigation bar with logo, search bar and logout link -->
+        <header>
+            <nav>
+                <!-- add image with css -->
+                <a href="index.html" id="logo">Logo</a>
+                <input type="text" Placeholder="Search...">
+                <!-- add image with css -->
+                <a href="" id="logout">Logout</a>
+            </nav>
+        </header>
+
+        <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
+        <div id="sidebar">
+            <ul>
+                <li><a href="share.html">Share Photo</a></li>
+                <li><a href="mygroups.html">My Groups</a></li>
+                <li><a href="myaccount.html">My Account</a></li>
+                <li><a href="support.html">Support / Help</a></li>
+            </ul>
+        </div>
+
+        <!--element for share photo-->
+        <div class="sharePhoto">
+            <fieldset>
+                <div id="dragPhotoArea">
+                    <!--Are where to drag photo from your device-->
+                    <p>Drag photo to upload</p>
+                    <button>Choose photo from device</button>
+                </div>
+            </fieldset>
+            <!--Can´t create dropdown list with multiple choices at the moment(javascript needed)-->
+            <label for="selectGroups">Select Groups</label>
+            <select name="selectGroups">
+                <option value="friends">Friends</option>
+                <option value="family">Family</option>
+            </select>
+            <!--Comment for new photo-->
+            <div class="comment">
+                <input type="text" placeholder="Add your comment"><br>
+                <button>Cancel</button>
+                <button>Done</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
