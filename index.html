@@ -5,47 +5,78 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&lt;App Name&gt;</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
-    <!-- a container div for all the content on the page -->
-    <div class="container">
-        <!-- navigation bar with logo, search bar and logout link -->
-        <header>
-            <nav>
-                <!-- add image with css -->
-                <a href="index.html" id="logo">Logo</a>
-                <input type="text" Placeholder="Search...">
-                <!-- add image with css -->
-                <a href="" id="logout">Logout</a>
-            </nav>
-        </header>
+    <!-- navigation bar with logo, search bar and logout link -->
+    <header>
+        <!-- add image with css -->
+        <a href="index.html" id="logo">Logo</a>
 
+        <!--div for search and logout-->
+        <div id="header-content">
+            <input type="text" Placeholder="Search...">
+            <button type="button" id="logoutBtn"><a href="#">Logout</a></button>
+        </div>
+
+    </header>
+
+    <!-- a container div for sidebar and all the content on the page -->
+    <div class="container">
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <div id="sidebar">
+        <nav>
             <ul>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
                 <li><a href="support.html">Support / Help</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <!-- element for an individual post on the feed -->
-        <div class="post">
-            <div class="img">
-                <img src="" alt="Posted photo">
+        <main>
+
+            <!-- element for an individual post on the feed -->
+            <div class="post">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus quis cupiditate, saepe
+                    natus
+                    placeat libero cumque quia! Sequi ad, aliquid eaque, magni eveniet error ab cum architecto iusto
+                    omnis
+                    eum, minima laboriosam autem. Exercitationem saepe sit qu
+                    nobis magnam nihil placeat ratione labore cupiditate nulla. Totam amet minima voluptate, distinctio
+                    possimus blanditiis mollitia sit libero corrupti earum sequi deserunt ea quia sed provident unde,
+                    reiciendis cumque nisi accusantium beatae sunt! Voluptas, iusto ullam laboriosam sit neque atque
+                    necessitatibus ea culpa nobis facilis ratione itaque, sunt totam eius, deserunt magni architecto
+                    pariatur! Porro repellat quam necessitatibus harum, quia, hic assumenda
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus quis cupiditate, saepe
+                    natus
+                    placeat libero cumque quia! Sequi ad, aliquid eaque, magni eveniet error ab cum architecto iusto
+                    omnis
+                    eum, minima laboriosam autem. Exercitationem saepe sit qu
+                    nobis magnam nihil placeat ratione labore cupiditate nulla. Totam amet minima voluptate, distinctio
+                    possimus blanditiis mollitia sit libero corrupti earum sequi deserunt ea quia sed provident unde,
+                    reiciendis cumque nisi accusantium beatae sunt! Voluptas, iusto ullam laboriosam sit neque atque
+                    necessitatibus ea culpa nobis facilis ratione itaque, sunt totam eius, deserunt magni architecto
+                    pariatur! Porro repellat quam necessitatibus harum, quia, hic assumenda
+                </h1>
+
+                <div class="img">
+                    <img src="" alt="Posted photo">
+                </div>
+
+                <div class="comment">
+                    <button>Comment</button>
+                    <button>Like</button>
+                    <input type="text" placeholder="Write a comment">
+                </div>
+
             </div>
-            <div class="comment">
-                <button>Comment</button>
-                <button>Like</button>
-                <input type="text" placeholder="Write a comment">
-            </div>
-        </div>
+        </main>
     </div>
-
 </body>
 
 </html>

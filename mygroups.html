@@ -6,38 +6,41 @@
 <head>
     <meta charset="UTF-8">
     <title>&lt;App Name&gt;</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
     <!-- a container div for all the content on the page -->
-    <div class="container">
-        <!-- navigation bar with logo, search bar and logout link -->
-        <header>
-            <nav>
-                <!-- add image with css -->
-                <a href="index.html" id="logo">Logo</a>
-                <input type="text" Placeholder="Search...">
-                <!-- add image with css -->
-                <a href="" id="logout">Logout</a>
-            </nav>
-        </header>
 
+    <!-- navigation bar with logo, search bar and logout link -->
+    <header>
+        <div></div>
+        <!-- add image with css -->
+        <a href="index.html" id="logo">Logo</a>
+        <input type="text" Placeholder="Search...">
+        <!-- add image with css -->
+        <a href="" id="logout">Logout</a>
+
+    </header>
+    <div class="container">
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <div id="sidebar">
+        <nav>
             <ul>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
                 <li><a href="support.html">Support / Help</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <!-- Lists all availables groups-->
-        <div>
-            <p>No groups right now</p>
-            <p><button> Add new group</button></p>
-        </div>
+        <main>
+
+            <!-- Lists all availables groups-->
+            <div>
+                <p>No groups right now</p>
+                <p><button> Add new group</button></p>
+            </div>
     </div>
 
 </body>
