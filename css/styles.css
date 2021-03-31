@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #444343;
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    background-color: #323232;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    /* overflow: hidden; */
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.sidebar {
+    border: 1px solid black;
+    background-color: #323232;
+    width: 18%;
+    display: block;
+    max-height: 500px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    text-align: center;
+    margin: .25rem;
+    padding: 0.5rem;
+    /* border: 1px solid white; */
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.posts {
+    width: 80%;
+    display: block;
+}
+
+.post {
+    border: 1px solid black;
+    background-color: #323232;
+    margin-bottom: 2rem;
+}
+
+.post img {
+    width: 100%;
+}
+
+.description {
+    margin: .5rem 1rem;
+    color: #fff;
+}
+
+.comment-buttons {
+    margin: .5rem 1rem;
+}
+
+.comment-buttons button {
+    color: white;
+    border-radius: 8px;
+    padding: 0.75rem;
+    background-color: #323232;
+    border: 1px solid black;
+}
+
+.comment {
+    display: flex;
+}
+
+.content {
+    display: block;
+    max-width: 80%;
+    background-color: #323232;
+    color: #fff;
+    border: 1px solid black;
+}
+
+.content h1 {
+    padding: 1rem;
+}
+
+.content h2 {
+    padding: 0 1rem;
+}
+
+.content p {
+    padding: 0 1rem;
+}
+
+
+
+#logo {
+    width: 33.3%;
+    margin-left: 1.5rem;
+    display: block;
+    /* background-color: red; */
+}
+
+#search-bar {
+    text-align: center;
+    width: 33.3%;  
+    display: block;
+    /* background-color: blue; */
+}
+
+#logout {
+    text-align: right;
+    width: 33.3%;
+    margin-right: 1.5rem;
+    display: block;
+    /* background-color: green; */
+}
+
+#comment-field {
+    margin: .5rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    max-width: 80%;
+    background-color: #323232;
+    display: block;
+}
+
+#comment-submit {
+    margin: 1rem;
+    padding: 0.75rem;
+    color: white;
+    border-radius: 8px;
+    display: block;
+    background-color: #323232;
+}
+
+
