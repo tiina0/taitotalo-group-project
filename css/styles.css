@@ -34,6 +34,11 @@ main {
     background-color: #fff;
 }
 
+p {
+
+    margin-top: 0;
+}
+
 h1 {
     padding: 0 2rem;
 }
@@ -55,10 +60,15 @@ img {
 
 .comment-field {
     width: 100%;
-    min-height: 4rem;
+    min-height: 2rem;
     margin-top: 1rem;
 
     /*margin: 1rem auto;*/
+}
+
+.written-comments {
+    border: 1px solid gray;
+    margin-top: .5rem;
 }
 
 #logo {
