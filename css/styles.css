@@ -35,9 +35,10 @@ header a:hover {
 }
 
 .sidebar {
+    position: fixed;
     border: 1px solid black;
     background-color: #323232;
-    width: 18%;
+    width: 200px;
     display: block;
     position:fixed;
     margin-left: -20%;
@@ -67,6 +68,7 @@ header a:hover {
 }
 
 .posts {
+    margin-left: 20%;
     width: 80%;
     display: block;
 }
@@ -82,7 +84,7 @@ header a:hover {
 }
 
 .description {
-    margin: .5rem 1rem;
+    padding: 0 1rem;
     color: #fff;
 }
 
@@ -95,7 +97,6 @@ header a:hover {
     border-radius: 8px;
     padding: 0.75rem;
     background-color: #323232;
-    border: 1px solid black;
 }
 
 .comment {
@@ -103,6 +104,7 @@ header a:hover {
 }
 
 .content {
+    margin-left: 20%;
     display: block;
     max-width: 80%;
     background-color: #323232;
@@ -110,19 +112,13 @@ header a:hover {
     border: 1px solid black;
 }
 
-.content h1 {
-    padding: 1rem;
+.content a {
+    color: white;
 }
 
-.content h2 {
+.content h1, h2, p, h3 {
     padding: 0 1rem;
 }
-
-.content p {
-    padding: 0 1rem;
-}
-
-
 
 #logo {
     width: 23.3%;
