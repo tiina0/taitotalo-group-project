@@ -41,7 +41,7 @@ header a:hover {
     display: block;
     position:fixed;
     margin-left: -200px;
-    height: 30%;
+    min-height: 300px;
 
 }
 
