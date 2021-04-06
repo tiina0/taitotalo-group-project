@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body >
     <!-- navigation bar with logo, search bar and logout link -->
-    <header>
+    <header id="header">
         <!-- add image with css -->
         <div id="logo">
             <a href="index.html">Logo</a>
@@ -20,15 +20,17 @@
             <input type="text" Placeholder="Search...">
         </div>
 
-        <div id="logout">
+        <div id="icons-right">
+            <button id="colorModeBtn">Light Mode</button>
             <a href="">Logout</a>
         </div>
+
     </header>
 
     <div class="container">
 
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <div class="sidebar">
+        <div id="sidebar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="share.html">Share Photo</a></li>
@@ -39,10 +41,8 @@
             </ul>
         </div>
 
+        <main>
 
-        <!-- element for an individual post on the feed -->
-        <div class="posts">
-            
             <div class="post">
                 <div class="img">
                     <img src="images/PictureField.png" alt="Picture Field">
@@ -65,9 +65,9 @@
                     </div>
 
                     <div class="comment">
-                        <textarea name="comment-field" id="comment-field" cols="120" rows="3"
+                        <textarea name="comment-field" class="comment-field" cols="120" rows="3"
                             placeholder="Write a comment"></textarea>
-                        <button type="submit" id="comment-submit">Submit</button>
+                        <button type="submit" class="comment-submit">Submit</button>
                     </div>
                 </div>
             </div>
@@ -95,15 +95,17 @@
                     </div>
 
                     <div class="comment">
-                        <textarea name="comment-field" id="comment-field" cols="120" rows="3"
+                        <textarea name="field" class="comment-field" cols="120" rows="3"
                             placeholder="Write a comment"></textarea>
 
-                        <button type="submit" id="comment-submit">Submit</button>
+                        <button type="submit" class="comment-submit">Submit</button>
                     </div>
                 </div>
             </div>
+        </main>
+    </div>
 
-        </div>
+    <script src="js/scripts.js"></script>
 
 </body>
 
