@@ -5,85 +5,108 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&lt;App Name&gt;</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
     <!-- navigation bar with logo, search bar and logout link -->
-    <header>
+    <header id="header">
         <!-- add image with css -->
-        <a href="index.html" id="logo">Logo</a>
-
-        <!--div for search and logout-->
-        <div id="header-content">
+        <div id="logo">
+            <a href="index.html">Logo</a>
+        </div>
+        <div id="search-bar">
             <input type="text" Placeholder="Search...">
-            <button type="button" id="logoutBtn"><a href="#">Logout</a></button>
+        </div>
+
+        <div id="icons-right">
+            <button id="colorModeBtn">Light Mode</button>
+            <a href="">Logout</a>
         </div>
 
     </header>
 
-    <!-- a container div for sidebar and all the content on the page -->
     <div class="container">
+
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <nav>
+        <div id="sidebar">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
-                <li><a href="support.html">Support / Help</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </div>
 
         <main>
 
-            <!-- element for an individual post on the feed -->
             <div class="post">
-
                 <div class="img">
-                    <img src="media/PictureField.png" alt="Picture Field">
-                </div>
-
-                <div class="comment">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <br>
-                    <input type="text" class="comment-field" placeholder="Write a comment">
-                </div>
-                <div class="written-comments">
-                    <p><strong>Jukka:</strong> Nice picture! I like it a lot!</p>
-                </div>
-                <div class="written-comments">
-                    <p><strong>Mika:</strong> Very cool! I want to say that....lorem Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Repellat libero delectus ducimus culpa obcaecati minus recusandae,
-                        enim suscipit omnis, ea facere quas veniam nulla iusto earum sed officiis eius commodi?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae officiis dolor
-                        asperiores, atque facere maxime animi debitis sit necessitatibus molestiae fugiat veniam
-                        voluptatibus recusandae beatae corrupti aperiam veritatis repellendus.
+                    <img src="images/PictureField.png" alt="Picture Field">
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus quis cupiditate,
+                        saepe
+                        natus
+                        placeat libero cumque quia! Sequi ad, aliquid eaque, magni eveniet error ab cum architecto iusto
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nam asperiores hic quo
+                        assumenda id
+                        incidunt iste ex, sunt repudiandae voluptate excepturi impedit dolore non alias neque
+                        repellendus
+                        rerum quidem.
                     </p>
                 </div>
-                <div class="written-comments">
-                    <p><strong>Anna:</strong> Me to....lorem Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Repellat libero delectus ducimus culpa obcaecati minus recusandae,
-                        enim suscipit omnis, ea facere quas veniam nulla iusto earum sed officiis eius commodi?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae officiis dolor
-                        asperiores, atque facere maxime animi debitis sit necessitatibus molestiae fugiat veniam
-                        voluptatibus recusandae beatae corrupti aperiam veritatis repellendus.
-                        enim suscipit omnis, ea facere quas veniam nulla iusto earum sed officiis eius commodi?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae officiis dolor
-                        asperiores, atque facere maxime animi debitis sit nece enim suscipit omnis, ea facere quas
-                        veniam nulla iusto earum sed officiis eius commodi?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae officiis dolor
-                        asperiores, atque facere maxime animi debitis sit nece
+                <div class="comment-area">
+                    <div class="comment-buttons">
+                        <button type="submit">Like</button>
+                        <button type="submit">Comment</button>
+                    </div>
+
+                    <div class="comment">
+                        <textarea name="comment-field" class="comment-field" cols="120" rows="3"
+                            placeholder="Write a comment"></textarea>
+                        <button type="submit" class="comment-submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="img">
+                    <img src="images/PictureField.png" alt="Picture Field">
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus quis cupiditate,
+                        saepe
+                        natus
+                        placeat libero cumque quia! Sequi ad, aliquid eaque, magni eveniet error ab cum architecto iusto
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nam asperiores hic quo
+                        assumenda id
+                        incidunt iste ex, sunt repudiandae voluptate excepturi impedit dolore non alias neque
+                        repellendus
+                        rerum quidem.
                     </p>
                 </div>
+                <div class="comment-area">
 
+                    <div class="comment-buttons">
+                        <button>Like</button>
+                        <button>Comment</button>
+                    </div>
 
+                    <div class="comment">
+                        <textarea name="field" class="comment-field" cols="120" rows="3"
+                            placeholder="Write a comment"></textarea>
+
+                        <button type="submit" class="comment-submit">Submit</button>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
+
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

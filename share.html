@@ -1,45 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- HTML prototype for the main page of the app -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>&lt;App Name&gt;</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-    <!-- a container div for all the content on the page -->
-
     <!-- navigation bar with logo, search bar and logout link -->
-    <header>
-        <div></div>
+    <header id="header">
         <!-- add image with css -->
-        <a href="index.html" id="logo">Logo</a>
-        <input type="text" Placeholder="Search...">
-        <!-- add image with css -->
-        <a href="" id="logout">Logout</a>
+        <div id="logo">
+            <a href="index.html">Logo</a>
+        </div>
+        <div id="search-bar">
+            <input type="text" Placeholder="Search...">
+        </div>
+
+        <div id="icons-right">
+            <button id="colorModeBtn">Light Mode</button>
+            <a href="">Logout</a>
+        </div>
 
     </header>
+
     <div class="container">
+
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <nav>
+        <div id="sidebar">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
-                <li><a href="support.html">Support / Help</a></li>
+
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </div>
 
         <main>
-
             <!--element for share photo-->
             <div class="sharePhoto">
-                <fieldset>
-                    <div id="dragPhotoArea">
+                <fieldset class="dragPhotoArea">
+                    <div>
                         <!--Are where to drag photo from your device-->
                         <p>Drag photo to upload</p>
                         <button>Choose photo from device</button>
@@ -52,14 +59,23 @@
                     <option value="family">Family</option>
                 </select>
                 <!--Comment for new photo-->
-                <div class="comment">
-                    <input type="text" placeholder="Add your comment"><br>
-                    <button>Cancel</button>
-                    <button>Done</button>
+                <div class="commentNewPhoto">
+                    <!--<input type="textarea" placeholder="Add your comment">--><br>
+                    <textarea name="comment-field" placeholder="Describe your photo"></textarea>
+                    <div class="addCommentBtns">
+                        <button>Cancel</button>
+                        <button>Done</button>
+                    </div>
 
                 </div>
             </div>
+
+
+
+        </main>
     </div>
+
+    <script src="js/scripts.js"></script>
 
 </body>
 

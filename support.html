@@ -6,65 +6,90 @@
 <head>
     <meta charset="UTF-8">
     <title>&lt;App Name&gt;</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- a container div for all the content on the page -->
-
     <!-- navigation bar with logo, search bar and logout link -->
-    <header>
-        <div></div>
+    <header id="header">
         <!-- add image with css -->
-        <a href="index.html" id="logo">Logo</a>
-        <input type="text" Placeholder="Search...">
-        <!-- add image with css -->
-        <a href="" id="logout">Logout</a>
+        <div id="logo">
+            <a href="index.html">Logo</a>
+        </div>
+        <div id="search-bar">
+            <input type="text" Placeholder="Search...">
+        </div>
+
+        <div id="icons-right">
+            <button id="colorModeBtn">Light Mode</button>
+            <a href="">Logout</a>
+        </div>
 
     </header>
+
     <div class="container">
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <nav>
+        <div id="sidebar">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
-                <li><a href="support.html">Support / Help</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+        </div>
 
         <main>
-
-
             <!-- div element for main content on page -->
             <div class="content">
                 <h1>FAQ</h1>
                 <h2>Question 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod animi, ipsa optio quam nam unde
-                    excepturi, minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo
-                    itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci
-                    animi omnis inventore, ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo
-                    tempore doloremque neque aliquid.</p>
+                    excepturi,
+                    minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo itaque.
+                    Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci animi omnis
+                    inventore,
+                    ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo tempore doloremque neque
+                    aliquid.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod animi, ipsa optio quam nam unde
-                    excepturi, minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo
-                    itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci
-                    animi omnis inventore, ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo
-                    tempore doloremque neque aliquid.</p>
+                    excepturi,
+                    minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo itaque.
+                    Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci animi omnis
+                    inventore,
+                    ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo tempore doloremque neque
+                    aliquid.</p>
 
                 <h2>Question 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod animi, ipsa optio quam nam unde
-                    excepturi, minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo
-                    itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci
-                    animi omnis inventore, ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo
-                    tempore doloremque neque aliquid.</p>
+                    excepturi,
+                    minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo itaque.
+                    Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci animi omnis
+                    inventore,
+                    ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo tempore doloremque neque
+                    aliquid.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod animi, ipsa optio quam nam unde
-                    excepturi, minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo
-                    itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci
-                    animi omnis inventore, ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo
-                    tempore doloremque neque aliquid.</p>
+                    excepturi,
+                    minima iste totam eveniet quisquam. Sed nihil voluptate omnis officiis, odit earum quo itaque.
+                    Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Molestias minus vitae adipisci animi omnis
+                    inventore,
+                    ab architecto odio debitis, eius, earum soluta quod tenetur est explicabo tempore doloremque neque
+                    aliquid.</p>
+
+                <h3>Can't find what you're looking for? Send us a message on our <a href="contact.html">contact
+                        page</a>!</h3>
+
             </div>
+        </main>
     </div>
+
+    <script src="js/scripts.js"></script>
+
 
 </body>
 

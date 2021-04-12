@@ -3,49 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>&lt;App Name&gt;</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>My Account</title>
 </head>
 
 <body>
 
     <!-- a container div for all the content on the page -->
-
-    <!-- navigation bar with logo, search bar and logout link -->
-    <header>
-        <div></div>
-        <!-- add image with css -->
-        <a href="index.html" id="logo">Logo</a>
-        <input type="text" Placeholder="Search...">
-        <!-- add image with css -->
-        <a href="" id="logout">Logout</a>
-
-    </header>
     <div class="container">
+        <!-- navigation bar with logo, search bar and logout link -->
+        <header>
+            <nav>
+                <!-- add image with css -->
+                <a href="index.html" id="logo">Logo</a>
+                <input type="text" Placeholder="Search...">
+                <!-- add image with css -->
+                <a href="" id="logout">Logout</a>
+            </nav>
+        </header>
+
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <nav>
+        <div id="sidebar">
             <ul>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
                 <li><a href="support.html">Support / Help</a></li>
             </ul>
-        </nav>
+        </div>
 
-        <main>
-
-            <!-- element for an individual post on the feed -->
-            <div class="post">
-                <h1>My account</h1>
-                <p>Username</p>
-                <p>Email address</p>
-                <p>Change profile picture</p>
-            </div>
-            </a>
+        <!-- element for an individual post on the feed -->
+        <div class="post">
+            <h1>My account</h1>
+            <p>Username</p>
+            <p>Email address</p>
+            <p>Change profile picture</p>
+                </div>
+              </a>
             <p>Birthday</p> <label for="start">Birthday:</label>
-            <input type="date" id="start" name="trip-start" value="2020-01-01" min="1921-01-01" max="2020-01-01">
+            <input type="date" id="start" name="trip-start"
+                   value="2020-01-01"
+                   min="1921-01-01" max="2020-01-01">
             <p><button>Delete my account</button></p>
-    </div>
+        </div>
     </div>
 
 </body>
