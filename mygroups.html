@@ -1,4 +1,4 @@
-<!-- HTML prototype for "my Groups" page of the app -->
+<!-- HTML prototype for the main page of the app -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,38 +6,113 @@
 <head>
     <meta charset="UTF-8">
     <title>&lt;App Name&gt;</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- navigation bar with logo, search bar and logout link -->
+    <header id="header">
+        <!-- add image with css -->
+        <div id="logo">
+            <a href="index.html">Logo</a>
+        </div>
+        <div id="search-bar">
+            <input type="text" Placeholder="Search...">
+        </div>
 
-    <!-- a container div for all the content on the page -->
+        <div id="icons-right">
+            <a href="">Logout</a>
+        </div>
+
+    </header>
+
     <div class="container">
-        <!-- navigation bar with logo, search bar and logout link -->
-        <header>
-            <nav>
-                <!-- add image with css -->
-                <a href="index.html" id="logo">Logo</a>
-                <input type="text" Placeholder="Search...">
-                <!-- add image with css -->
-                <a href="" id="logout">Logout</a>
-            </nav>
-        </header>
 
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <div id="sidebar">
+        <nav id="sidebar">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
-                <li><a href="support.html">Support / Help</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <!-- Lists all availables groups-->
-        <div>
-            <p>No groups right now</p>
-            <p><button> Add new group</button></p>
-        </div>
+        <main>
+                <div class="main-feed-container">
+                    <div class="card">
+                        <div class="card-header-img">
+                            <img src="images/PictureField.png" alt="" width="200">
+                        </div>
+                        <div class="card-header-name">
+                            <h4>My Group</h4>
+                        </div>
+                        <div class="card-description">
+                            <p>This is a test group. This group doesn't do anything</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-footer-btn">Leave Group</button>
+                            <button class="card-footer-btn">Settings</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header-img">
+                            <img src="images/PictureField.png" alt="" width="200">
+                        </div>
+                        <div class="card-header-name">
+                            <h4>My Group</h4>
+                        </div>
+                        <div class="card-description">
+                            <p>This is a test group. This group doesn't do anything</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-footer-btn">Leave Group</button>
+                            <button class="card-footer-btn">Settings</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header-img">
+                            <img src="images/PictureField.png" alt="" width="200">
+                        </div>
+                        <div class="card-header-name">
+                            <h4>My Group</h4>
+                        </div>
+                        <div class="card-description">
+                            <p>This is a test group. This group doesn't do anything</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-footer-btn">Leave Group</button>
+                            <button class="card-footer-btn">Settings</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header-img">
+                            <img src="images/PictureField.png" alt="" width="200">
+                        </div>
+                        <div class="card-header-name">
+                            <h4>My Group</h4>
+                        </div>
+                        <div class="card-description">
+                            <p>This is a test group. This group doesn't do anything</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-footer-btn">Delete Group</button>
+                            <button class="card-footer-btn">Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
     </div>
 
 </body>
