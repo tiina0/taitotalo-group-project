@@ -1,10 +1,9 @@
-<!-- HTML prototype for the main page of the app -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>&lt;App Name&gt;</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,6 +27,9 @@
 
     </header>
 
+
+    <!-- container for sidebar and main content -->
+
     <div class="container">
 
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
@@ -42,7 +44,55 @@
             </ul>
         </nav>
 
+        <!-- section for main content on page, different on every page -->
         <main>
+
+            <!-- container for individual post -->
+            <div class="post">
+                <div class="post-header-info">
+                    <p>Published by <strong>user1234</strong>
+                        to group <strong>Group1</strong>
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="images/PictureField.png" alt="Picture Field">
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus quis cupiditate,
+                        saepe
+                        natus
+                        placeat libero cumque quia! Sequi ad, aliquid eaque, magni eveniet error ab cum architecto iusto
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nam asperiores hic quo
+                        assumenda id
+                        incidunt iste ex, sunt repudiandae voluptate excepturi impedit dolore non alias neque
+                        repellendus
+                        rerum quidem.
+                    </p>
+                </div>
+                <div class="comment-area">
+                    <div class="comment-buttons">
+                        <button type="submit">Like</button>
+                        <button type="submit">Comment</button>
+                    </div>
+
+                    <div class="comment">
+                        <textarea name="comment-field" class="comment-field" cols="120" rows="3"
+                            placeholder="Write a comment"></textarea>
+                        <button type="submit" class="comment-submit-button">Submit</button>
+                    </div>
+                </div>
+                <div class="posted-comments">
+                    <p><span class="comment-poster">Jukka: </span>Nice picture!</p>
+                </div>
+                <div class="posted-comments">
+                    <p> <span class="comment-poster">Anna: </span> Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. A
+                        exercitationem recusandae sint vero? Tenetur excepturi iusto, maxime exercitationem quasi sunt
+                        molestias, inventore tempore aliquid repellendus fugiat reiciendis obcaecati fuga consequatur?
+                    </p>
+                </div>
+            </div>
+
+            <!-- another post -->
 
             <div class="post">
                 <div class="post-header-info">
@@ -73,62 +123,15 @@
                     <div class="comment">
                         <textarea name="comment-field" class="comment-field" cols="120" rows="3"
                             placeholder="Write a comment"></textarea>
-                        <button type="submit" class="comment-submit">Submit</button>
+                        <button type="submit" class="comment-submit-button">Submit</button>
                     </div>
                 </div>
                 <div class="posted-comments">
-                    <p><span class="poster">Jukka: </span>Nice picture!</p>
+                    <p><span class="comment-poster">Jukka: </span>Nice picture!</p>
                 </div>
                 <div class="posted-comments">
-                    <p> <span class="poster">Anna: </span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
-                        exercitationem recusandae sint vero? Tenetur excepturi iusto, maxime exercitationem quasi sunt
-                        molestias, inventore tempore aliquid repellendus fugiat reiciendis obcaecati fuga consequatur?
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="post">
-                <div class="post-header-info">
-                    <p>Published by <strong>user1234</strong>
-                        to group <strong>Group1</strong>
-                    </p>
-                </div>
-                <div class="img">
-                    <img src="images/PictureField.png" alt="Picture Field">
-                    <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus quis cupiditate,
-                        saepe
-                        natus
-                        placeat libero cumque quia! Sequi ad, aliquid eaque, magni eveniet error ab cum architecto iusto
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, nam asperiores hic quo
-                        assumenda id
-                        incidunt iste ex, sunt repudiandae voluptate excepturi impedit dolore non alias neque
-                        repellendus
-                        rerum quidem.
-                    </p>
-                </div>
-                
-                <div class="comment-area">
-
-                    <div class="comment-buttons">
-                        <button>Like</button>
-                        <button>Comment</button>
-                    </div>
-
-                    <div class="comment">
-                        <textarea name="field" class="comment-field" cols="120" rows="3"
-                            placeholder="Write a comment"></textarea>
-
-                        <button type="submit" class="comment-submit">Submit</button>
-                    </div>
-                </div>
-
-                <div class="posted-comments">
-                    <p><span class="poster">Jukka: </span>Nice picture!</p>
-                </div>
-                <div class="posted-comments">
-                    <p> <span class="poster">Anna: </span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                    <p> <span class="comment-poster">Anna: </span> Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. A
                         exercitationem recusandae sint vero? Tenetur excepturi iusto, maxime exercitationem quasi sunt
                         molestias, inventore tempore aliquid repellendus fugiat reiciendis obcaecati fuga consequatur?
                     </p>
