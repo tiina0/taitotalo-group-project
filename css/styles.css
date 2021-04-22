@@ -67,45 +67,77 @@ header a:hover {
 /* Styles for container containing sidebar and <main> element */
 
 .container {
-    width: 55%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
 }
 
 #sidebar {
-    min-width: 23%;
+    min-width: 26%;
     position: sticky;
     top: 95px;
     background-color: #232323;
     display: block;
-    height: 400px;
+    height: 600px;
     border-radius: .25rem;
     box-shadow: 5px 5px 5px #101010;
+
 }
 
 #sidebar ul {
+    margin-top: 4rem;
     list-style-type: none;
     padding: 0;
+
+
 }
 
 #sidebar ul li {
     text-align: center;
     margin: .25rem;
     padding: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    /*border-bottom: rgb(49, 49, 49) solid 0.1px;*/
+
+
 }
 
 #sidebar ul li a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+
+#sidebar ul :hover {
+    background-color: #382a2a;
 }
 
 #sidebar ul li a:hover {
     text-decoration: underline;
+
+}
+
+#social {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 20%;
+
+    align-items: center;
+}
+
+#social img {
+
+    padding-top: 6rem;
+
+    width: 20px;
 }
 
 main {
-    width: 75%;
+    width: 70%;
 }
 
 /* Styles for posts on home/index page */
@@ -296,6 +328,8 @@ main {
     .comment-field {
         max-width: 60%;
     }
+
+
 }
 
 @media (max-width: 880px) {
@@ -318,6 +352,7 @@ main {
         border-left: none;
         border-right: none;
         border-bottom: none;
+        width: 16;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -336,6 +371,7 @@ main {
 
     #search-bar input {
         max-width: 33.3%;
+
     }
 
     .card {
@@ -352,6 +388,9 @@ main {
         max-width: 90%;
     }
 
+    #social {
+        display: none;
+    }
 
 }
 
