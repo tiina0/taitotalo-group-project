@@ -3,48 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>My Account</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- navigation bar with logo, search bar and logout link -->
+    <header id="header">
+        <!-- add image with css -->
+        <div id="logo">
+            <a href="index.html">Logo</a>
+        </div>
+        <div id="search-bar">
+            <input type="text" Placeholder="Search...">
+        </div>
 
-    <!-- a container div for all the content on the page -->
+        <div id="icons-right">
+            <a href="">Logout</a>
+        </div>
+
+    </header>
+
     <div class="container">
-        <!-- navigation bar with logo, search bar and logout link -->
-        <header>
-            <nav>
-                <!-- add image with css -->
-                <a href="index.html" id="logo">Logo</a>
-                <input type="text" Placeholder="Search...">
-                <!-- add image with css -->
-                <a href="" id="logout">Logout</a>
-            </nav>
-        </header>
 
         <!-- sidebar with links to pages: share photo, my groups, my account, support/help -->
-        <div id="sidebar">
+        <nav id="sidebar">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
-                <li><a href="support.html">Support / Help</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <!-- element for an individual post on the feed -->
-        <div class="post">
-            <h1>My account</h1>
-            <p>Username</p>
-            <p>Email address</p>
-            <p>Change profile picture</p>
-                </div>
-              </a>
-            <p>Birthday</p> <label for="start">Birthday:</label>
-            <input type="date" id="start" name="trip-start"
-                   value="2020-01-01"
-                   min="1921-01-01" max="2020-01-01">
-            <p><button>Delete my account</button></p>
-        </div>
+        <main>
+
+
+            <div class="content">
+                <h1>My account</h1>
+
+                <form action="/action_page.php">
+                    <label for="fname">Username</label>
+                    <input type="text" id="fname" name="fname" value=""><br><br>
+
+                    <label for="lname">Change password</label>
+                    <input type="text" id="lname" name="lname" value=""><br><br>
+
+                    <p> Change profile picture </p>
+
+                    <label for="start"> Birthday:</label>
+                    <input type="date" id="start" name="trip-start" value="2020-01-01" min="1921-01-01"
+                        max="2020-01-01">
+
+                    <p><button class="delete">Delete my account</button></p>
+                </form>
+            </div>
+        </main>
+
+
     </div>
 
 </body>

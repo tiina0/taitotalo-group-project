@@ -1,12 +1,13 @@
-<!-- HTML prototype for the main page of the app -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>&lt;App Name&gt;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>SharePhoto</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,6 @@
         </div>
 
         <div id="icons-right">
-            <button id="colorModeBtn">Light Mode</button>
             <a href="">Logout</a>
         </div>
 
@@ -36,7 +36,6 @@
                 <li><a href="share.html">Share Photo</a></li>
                 <li><a href="mygroups.html">My Groups</a></li>
                 <li><a href="myaccount.html">My Account</a></li>
-
                 <li><a href="support.html">Support</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -49,7 +48,7 @@
                     <div>
                         <!--Are where to drag photo from your device-->
                         <p>Drag photo to upload</p>
-                        <button>Choose photo from device</button>
+                        <button class="sharePhotoBtns">Choose photo from device</button>
                     </div>
                 </fieldset>
                 <!--Can´t create dropdown list with multiple choices at the moment(javascript needed)-->
@@ -63,10 +62,9 @@
                     <!--<input type="textarea" placeholder="Add your comment">--><br>
                     <textarea name="comment-field" placeholder="Describe your photo"></textarea>
                     <div class="addCommentBtns">
-                        <button>Cancel</button>
-                        <button>Done</button>
+                        <button class="sharePhotoBtns">Cancel</button>
+                        <button class="sharePhotoBtns">Done</button>
                     </div>
-
                 </div>
             </div>
 
@@ -75,7 +73,11 @@
         </main>
     </div>
 
-    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
+
 
 </body>
 

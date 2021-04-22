@@ -1,10 +1,29 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding-top: 65px;
-    background-color: #444343;
+    background-color: #121212;
     overflow-y: scroll;
 }
+
+
+/* general styles for buttons on all pages */
+
+button {
+    border-left: 1px solid f000;
+    border-top: 1px solid f000;
+    border-bottom: none;
+    border-right: none;
+    margin-right: .15rem;
+    padding: .5rem;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #232323;
+    box-shadow: 2px 2px 2px #131313;
+}
+
+/* Styles for all content in header */
 
 header {
     position: fixed;
@@ -14,10 +33,7 @@ header {
     display: flex;
     width: 100%;
     padding: 20px;
-    margin: 0 auto 10px auto;
-    margin-bottom: 10px;
-    background-color: #323232;
-    color: white;
+    background-color: #232323;
     border-bottom: 1px solid black;
 }
 
@@ -30,48 +46,155 @@ header a:hover {
     text-decoration: underline;
 }
 
-main {
-    width: 100%;
-    max-width: 75%;
-
+#logo {
+    text-align: center;
+    width: 33.3%;
+    display: block;
 }
 
+#search-bar {
+    text-align: center;
+    width: 33.3%;
+    display: block;
+}
+
+#icons-right {
+    text-align: center;
+    width: 33.3%;
+    display: block;
+}
+
+/* Styles for container containing sidebar and <main> element */
+
 .container {
-    max-width: 50%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
-    padding-top: 20px;
+    margin: 30px auto;
 }
 
 #sidebar {
     min-width: 23%;
-    /* padding: 0 2.75rem; */
     position: sticky;
     top: 95px;
-    border: 1px solid black;
-    background-color: #323232;
+    background-color: #232323;
     display: block;
     height: 400px;
+    border-radius: .25rem;
+    box-shadow: 5px 5px 5px #101010;
 }
 
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-.content {
-    background-color: #323232;
+#sidebar ul li {
+    text-align: center;
+    margin: .25rem;
+    padding: 0.5rem;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 75%;
+}
+
+/* Styles for posts on home/index page */
+
+.post {
+    background-color: #232323;
+    padding-bottom: 1rem;
+    margin-bottom: 25px;
+    color: white;
+    border-radius: .25rem;
+    box-shadow: 5px 5px 5px #101010;
+}
+
+.post-header-info {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background-color: #232323;
+    color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+.post-header-info p {
+    margin: 0;
+}
+
+.post img {
+    width: 100%;
+}
+
+.description {
+    padding: 0 1rem;
+    font-weight: 300;
+}
+
+.comment-area {
+    padding-left: 1rem;
+}
+
+.comment {
+    display: flex;
+}
+
+.comment-field {
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
-    border: 1px solid black;
+    max-width: 75%;
+    background-color: #232323;
 }
+
+.comment-submit-button {
+    margin: 1.75rem 1rem;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 8px;
+    background-color: #232323;
+    overflow: auto;
+}
+
+.posted-comments {
+    font-weight: 300;
+    background-color: #272727;
+    box-shadow: 2px 2px 2px #131313;
+    width: 90%;
+    padding: 0;
+    margin: 0 1rem;
+    border-radius: .5rem;
+}
+
+.posted-comments p {
+    padding: .5rem;
+}
+
+.comment-poster {
+    font-weight: 500;
+}
+
+
+/* Styles for Share Photo page */
 
 .sharePhoto {
-
     display: block;
     min-height: 400px;
-    background-color: #323232;
+    background-color: #232323;
     color: #fff;
     border: 1px solid black;
-    margin-bottom: 2rem;
     text-align: center;
-
+    padding-bottom: 2rem;
 }
 
 .dragPhotoArea {
@@ -90,172 +213,272 @@ main {
     margin: .5rem 1rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    background-color: #323232;
+    background-color: #232323;
 
 }
 
-.addCommentBtns {
-    padding: .5rem;
+/* Styles for My Groups page */
+
+.groups-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.post {
-    border: 1px solid black;
-    background-color: #323232;
-    margin-bottom: 2rem;
+.card {
+    background: #323232;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px #131313;
     color: white;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    width: 200px;
+    min-height: 350px;
+    padding-bottom: 1rem;
 }
 
-.post img {
+.card-header-img img {
     width: 100%;
 }
 
-.description {
-    padding: 0 1rem;
-    /* color: #fff; */
+.card-header-name {
+    width: 100%;
+    text-align: center;
 }
 
-.comment-buttons {
-    margin: .5rem 1rem;
+.card-description {
+    margin: 1rem;
+    border-bottom: 2px solid black;
+    font-size: 14px;
+    height: 120px;
 }
 
-.comment-buttons button {
+.card-footer {
+    padding: .3rem;
+}
+
+.card-footer-btn {
+    font-family: 'Roboto', sans-serif;
     color: white;
-    border-radius: 8px;
-    padding: 0.75rem;
-    background-color: #323232;
+    border-radius: .5rem;
+    padding: 0.5rem;
+    background-color: #232323;
 }
 
-.comment {
-    display: flex;
+/* Basic styles for my account, support, and contact pages */
+
+.content {
+    background-color: #232323;
+    color: #fff;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    box-shadow: 5px 5px 5px #101010;
 }
 
 .content a {
     color: white;
 }
 
-.content h1,
-h2,
-p,
-h3 {
-    padding: 0 1rem;
+@media (min-width: 880px) and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    #message {
+        max-width: 100%;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
 }
 
-.form-button {
-    margin: .15rem;
-    padding: 0.5rem;
-    color: white;
-    border-radius: 8px;
-    display: block;
-    background-color: #323232;
+@media (max-width: 880px) {
+    .container {
+        margin: 20px 0 0 0;
+        width: 100%;
+        flex-direction: column;
+        min-height: calc(100vh - 80px);
+    }
+
+    main {
+        margin: 0 auto;
+        width: 90%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    #sidebar {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        order: 2;
+        margin-bottom: 0px;
+    }
+
+    #sidebar ul {
+        font-size: 0.75rem;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    #search-bar input {
+        max-width: 33.3%;
+    }
+
+    .card {
+        margin: .5rem auto 1rem auto;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
+
+    #message {
+        max-width: 90%;
+    }
+
+
 }
 
-.comment-field {
-    margin: .5rem 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    max-width: 80%;
-    background-color: #323232;
-    display: block;
+/*SHARE PHOTO proto*/
+
+
+
+
+.sharePhotoBtns {
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
 }
 
-.comment-field {
-    margin: .5rem 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    max-width: 80%;
-    background-color: #323232;
-    display: block;
+.sharePhotoBtns:hover {
+    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    background-color: #0061a7;
 }
 
-.comment-submit {
-    margin: 1rem;
-    padding: 0.75rem;
-    color: white;
-    border-radius: 8px;
-    display: block;
-    background-color: #323232;
+.sharePhotoBtns:active {
+    position: relative;
+    top: 1px;
 }
 
-.light-mode-for-body {
-    background-color: white;
+
+
+/*Here are LANDINGPAGE styles*/
+
+
+.logInField {
+    width: 15rem;
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    /*border: rgb(128, 102, 63) 1px solid;*/
 }
 
-.light-mode {
-    background-color: rgb(21, 67, 85) !important;
-    color: black !important;
+.log {
+    position: fixed;
+    /*border: 1px solid rgb(128, 128, 128);*/
+    margin: 0 auto;
+    margin: 0 auto;
 }
 
-.light-mode-for-textarea {
-    background-color: white !important;
+.landingNav ul {
+    width: 27rem;
+    margin-left: 70%;
 }
 
-.light-mode-for-btns {
-    background-color: rgb(21, 67, 85) !important;
-    color: white !important;
-}
-
-.light-mode-for-posts {
-    background-color: #afafaf !important;
-    color: black !important;
-}
-
-.light-mode-for-content {
-    background-color: rgb(21, 67, 85) !important;
-    color: white !important;
-}
-
-#colorModeBtn {
-    margin: 1rem;
-    padding: 0.75rem;
-    color: white;
-    border-radius: 8px;
-    background-color: #323232;
-    margin-right: .5rem;
-    padding: .25rem;
-}
-
-#colorModeBtn:focus {
-    outline: 0;
-}
-
-#sidebar ul {
+.landingNav ul li {
     list-style-type: none;
+    display: inline;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.log input {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.otherOptions ul {
+    margin-top: 1rem;
     padding: 0;
 }
 
-#sidebar ul li {
-    text-align: center;
-    margin: .25rem;
-    padding: 0.5rem;
-    /* border: 1px solid white; */
+.otherOptions ul li {
+    display: inline-block;
+    list-style-type: none;
 }
 
-#sidebar ul li a {
+.otherOptions ul :first-child {
+    padding-right: 0.3rem;
+    border-right: white solid 1px;
+}
+
+#landingHeader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: #232323;
+    border-bottom: 1px solid rgb(56, 55, 55);
+
+}
+
+#landingHeader ul {
+    display: flex;
+
+}
+
+#landingHeader a {
     color: white;
     text-decoration: none;
 }
 
-#sidebar ul li a:hover {
-    text-decoration: underline;
+#landingLogo {
+    margin-left: -20rem;
 }
 
-#logo {
-    width: 33.3%;
-    margin: 0 0 0 1.5rem;
-    display: block;
-    /* background-color: red; */
+#mainLanding {
+    display: flex;
+    width: 700px;
+    /*position: fixed;*/
+    margin: auto;
+    margin-top: 13%;
+    color: white;
+    max-height: 50vh;
 }
 
-#search-bar {
-    text-align: center;
-    width: 33.3%;
-    display: block;
-    /* background-color: blue; */
-}
-
-#icons-right {
-    text-align: right;
-    width: 33.3%;
-    margin-right: 3rem;
-    display: block;
+#mainLanding img {
+    width: 25rem;
+    opacity: 0.4;
+    border-radius: 1px;
 }
