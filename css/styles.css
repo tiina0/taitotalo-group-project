@@ -52,6 +52,11 @@ header a:hover {
     display: block;
 }
 
+#logo img {
+    width: 4rem;
+    margin-top: .2rem;
+}
+
 #search-bar {
     text-align: center;
     width: 33.3%;
@@ -67,14 +72,14 @@ header a:hover {
 /* Styles for container containing sidebar and <main> element */
 
 .container {
-    width: 75%;
+    width: 59%;
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
 }
 
 #sidebar {
-    min-width: 26%;
+    min-width: 23%;
     position: sticky;
     top: 95px;
     background-color: #232323;
@@ -82,15 +87,12 @@ header a:hover {
     height: 600px;
     border-radius: .25rem;
     box-shadow: 5px 5px 5px #101010;
-
 }
 
 #sidebar ul {
-    margin-top: 4rem;
+    margin-top: 5rem;
     list-style-type: none;
     padding: 0;
-
-
 }
 
 #sidebar ul li {
@@ -99,45 +101,25 @@ header a:hover {
     padding: 0.5rem;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    /*border-bottom: rgb(49, 49, 49) solid 0.1px;*/
-
-
 }
 
 #sidebar ul li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-
-
 }
 
 #sidebar ul :hover {
-    background-color: #382a2a;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    border-radius: 2px;
 }
 
-#sidebar ul li a:hover {
+/*#sidebar ul li a:hover {
     text-decoration: underline;
-
-}
-
-#social {
-    display: flex;
-    justify-content: space-between;
-    margin: auto 20%;
-
-    align-items: center;
-}
-
-#social img {
-
-    padding-top: 6rem;
-
-    width: 20px;
-}
+}*/
 
 main {
-    width: 70%;
+    width: 75%;
 }
 
 /* Styles for posts on home/index page */
@@ -231,11 +213,13 @@ main {
 
 .dragPhotoArea {
     height: 250px;
+    width: auto;
     border: dashed rgb(92, 91, 91);
     margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .commentNewPhoto>textarea {
@@ -246,6 +230,44 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     background-color: #232323;
+}
+
+
+
+
+/*SHARE PHOTO temporary sample*/
+
+.sharePhotoBtns {
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
+}
+
+.sharePhotoBtns:hover {
+    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    background-color: #0061a7;
+}
+
+.sharePhotoBtns:active {
+    position: relative;
+    top: 1px;
+}
+
+#shareLink {
+    background-color: #302f2f;
+
+    border-radius: 2px;
+
 
 }
 
@@ -316,6 +338,8 @@ main {
     color: white;
 }
 
+
+
 @media (min-width: 880px) and (max-width: 1200px) {
     .container {
         width: 80%;
@@ -328,8 +352,6 @@ main {
     .comment-field {
         max-width: 60%;
     }
-
-
 }
 
 @media (max-width: 880px) {
@@ -364,6 +386,7 @@ main {
     }
 
     #sidebar ul {
+        margin-top: 0;
         font-size: 0.75rem;
         display: inline-flex;
         align-items: center;
@@ -371,7 +394,6 @@ main {
 
     #search-bar input {
         max-width: 33.3%;
-
     }
 
     .card {
@@ -388,61 +410,34 @@ main {
         max-width: 90%;
     }
 
-    #social {
-        display: none;
-    }
 
 }
-
-/*SHARE PHOTO proto*/
-
-
-
-
-.sharePhotoBtns {
-    box-shadow: inset 0px 1px 0px 0px #54a3f7;
-    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-    background-color: #007dc1;
-    border-radius: 3px;
-    border: 1px solid #124d77;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 13px;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #154682;
-}
-
-.sharePhotoBtns:hover {
-    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
-    background-color: #0061a7;
-}
-
-.sharePhotoBtns:active {
-    position: relative;
-    top: 1px;
-}
-
-
 
 /*Here are LANDINGPAGE styles*/
 
+.landingBody {
+    height: 100%
+}
 
 .logInField {
     width: 15rem;
     display: flex;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 4rem;
     /*border: rgb(128, 102, 63) 1px solid;*/
 }
 
 .log {
     position: fixed;
+    margin: 0 auto;
+    margin-top: 0;
     /*border: 1px solid rgb(128, 128, 128);*/
-    margin: 0 auto;
-    margin: 0 auto;
+}
+
+.log button {
+    margin-top: 1.5rem;
+    width: 90%;
+    margin-left: 0.3rem;
 }
 
 .landingNav ul {
@@ -458,21 +453,40 @@ main {
 }
 
 .log input {
-    margin-top: 0.5rem;
+    width: 90%;
+    margin-top: 0.2rem;
     margin-bottom: 1rem;
 }
 
 .otherOptions ul {
     margin-top: 1rem;
+    margin-left: 4px;
+    ;
     padding: 0;
 }
 
 .otherOptions ul li {
     display: inline-block;
     list-style-type: none;
+    text-decoration: none;
 }
 
-.otherOptions ul :first-child {
+.otherOptions ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+
+}
+
+.otherOptions ul li :visited {
+    color: rgb(255, 255, 255);
+}
+
+.otherOptions ul li :hover {
+    color: rgb(212, 205, 205);
+}
+
+.otherOptions ul li:first-child {
     padding-right: 0.3rem;
     border-right: white solid 1px;
 }
@@ -503,7 +517,14 @@ main {
 }
 
 #landingLogo {
+
     margin-left: -20rem;
+
+}
+
+#landingLogo img {
+    width: 4rem;
+    margin-top: .2rem;
 }
 
 #mainLanding {
@@ -511,13 +532,138 @@ main {
     width: 700px;
     /*position: fixed;*/
     margin: auto;
-    margin-top: 13%;
+    margin-top: 8%;
     color: white;
     max-height: 50vh;
 }
 
 #mainLanding img {
     width: 25rem;
-    opacity: 0.4;
+    opacity: 0.7;
     border-radius: 1px;
+}
+
+#social {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 45%;
+
+    align-items: center;
+}
+
+#social img {
+
+    padding-top: 1rem;
+    opacity: 1;
+    width: 20px;
+
+}
+
+.wrapper {
+    min-height: calc(70vh - 50px);
+}
+
+footer {
+    height: 50px;
+
+}
+
+footer p {
+    margin-left: 47%;
+    color: rgb(61, 60, 60);
+
+}
+
+/*Sign UP field*/
+
+
+fieldset {
+    border: none;
+    width: 100%;
+    /*border: brown 1px solid;*/
+}
+
+fieldset p3 {
+    padding-left: 5.5rem;
+
+}
+
+.signUpBtns {
+    width: 88%;
+    display: flex;
+    justify-content: right;
+
+}
+
+.signUpBtns button {
+    margin-left: 0.5rem;
+
+
+}
+
+.signUpBtns :visited {
+    color: white;
+}
+
+.signUpBtns a {
+    text-decoration: none;
+}
+
+#signUp {
+    width: 230px;
+    margin: auto;
+    margin-top: 2rem;
+    height: 90%;
+    /* border: cadetblue 1px solid;*/
+}
+
+#signUp input {
+    width: 85%;
+
+    margin-bottom: 0.5rem;
+}
+
+
+
+#signUp p {
+    font-size: 13px;
+    color: rgb(167, 167, 167);
+}
+
+/*Forgot your password field*/
+
+
+
+.passwordRestoreField p {
+    padding-left: 13.5rem;
+    color: gray;
+}
+
+#resetEmail {
+    width: 230px;
+    margin: auto;
+    margin-top: 2rem;
+    height: 90%;
+    padding-bottom: 2rem;
+}
+
+.passwordRestoreField input {
+    margin-bottom: 2rem;
+    width: 250px;
+}
+
+#resetEmail p {
+    padding-left: 0;
+
+
+}
+
+#resetEmail p :visited {
+    color: white;
+    text-decoration: none;
+}
+
+#resetEmail a {
+    text-decoration: none;
+
 }

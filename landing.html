@@ -11,48 +11,61 @@
 </head>
 
 <body class="landingBody">
-    <div id="landingHeader">
-        <div id="landingLogo">
-            <a href="landing.html">Project4</a>
+    <div class="wrapper">
+        <div id="landingHeader">
+            <div id="landingLogo">
+                <a href="index.html"> <img src="images/logo2.png" alt=""></a>
+            </div>
+            <nav class="landingNav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
         </div>
-        <nav class="landingNav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-
-    </div>
 
 
-    <div id="mainLanding">
+        <div id="mainLanding">
 
-        <img src="images/meme.jpg" alt="some intro photo">
+            <img src="images/meme.jpg" alt="some intro photo">
 
-        <div class="logInField">
-            <div class="log">
+            <div class="logInField">
+                <div class="log">
 
-                <h3>Log in</h3>
-                <label for="username">Username or Password</label>
-                <br>
-                <input type="text" name="username">
-                <br>
-                <label for="password">Password</label>
-                <br>
-                <input type="password" name="password">
+                    <h3>Log in</h3>
+                    <label for="username">Username or Email</label>
+                    <br>
+                    <input type="text" name="username">
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="password">
+                    <button>Sign In</button>
+                    <div class="otherOptions">
+                        <ul>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="forgotpassword.html">Forgot password?</a></li>
+                        </ul>
 
-                <div class="otherOptions">
-                    <ul>
-                        <li>Sign Up</li>
-                        <li>Forgot password?</li>
-                    </ul>
+                    </div>
 
                 </div>
+
             </div>
         </div>
     </div>
+    <footer>
+        <div id="social">
+            <img src="images/facebook.png">
+            <img src="images/instagram.png">
+            <img src="images/pinterest.png">
+            <img src="images/twitter.png">
+        </div>
+        <p>&copy 2021 project4</p>
+    </footer>
 
     <script src="js/scripts.js">
     </script>
