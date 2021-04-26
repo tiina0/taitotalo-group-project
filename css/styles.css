@@ -338,81 +338,6 @@ main {
     color: white;
 }
 
-
-
-@media (min-width: 880px) and (max-width: 1200px) {
-    .container {
-        width: 80%;
-    }
-
-    #message {
-        max-width: 100%;
-    }
-
-    .comment-field {
-        max-width: 60%;
-    }
-}
-
-@media (max-width: 880px) {
-    .container {
-        margin: 20px 0 0 0;
-        width: 100%;
-        flex-direction: column;
-        min-height: calc(100vh - 80px);
-    }
-
-    main {
-        margin: 0 auto;
-        width: 90%;
-        order: 1;
-        margin-bottom: 20px;
-    }
-
-    #sidebar {
-        border-radius: 0;
-        border-left: none;
-        border-right: none;
-        border-bottom: none;
-        width: 16;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        height: 60px;
-        order: 2;
-        margin-bottom: 0px;
-    }
-
-    #sidebar ul {
-        margin-top: 0;
-        font-size: 0.75rem;
-        display: inline-flex;
-        align-items: center;
-    }
-
-    #search-bar input {
-        max-width: 33.3%;
-    }
-
-    .card {
-        margin: .5rem auto 1rem auto;
-        width: 100%;
-        min-height: 300px;
-    }
-
-    .comment-field {
-        max-width: 60%;
-    }
-
-    #message {
-        max-width: 90%;
-    }
-
-
-}
-
 /*Here are LANDINGPAGE styles*/
 
 .landingBody {
@@ -665,5 +590,84 @@ fieldset p3 {
 
 #resetEmail a {
     text-decoration: none;
+
+}
+
+@media (min-width: 880px) and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    #message {
+        max-width: 100%;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 880px) {
+    .container {
+        margin: 20px 0 0 0;
+        width: 100%;
+        flex-direction: column;
+        min-height: calc(100vh - 80px);
+    }
+
+    main {
+        margin: 0 auto;
+        width: 90%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    #sidebar {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        width: 16;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        order: 2;
+        margin-bottom: 0px;
+    }
+
+    #sidebar ul {
+        margin-top: 0;
+        font-size: 0.75rem;
+        display: inline-flex;
+        align-items: center;
+
+    }
+
+    #sidebar ul li {
+
+        padding: 0.5rem;
+    }
+
+    #search-bar input {
+        max-width: 33.3%;
+    }
+
+    .card {
+        margin: .5rem auto 1rem auto;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
+
+    #message {
+        max-width: 90%;
+    }
+
 
 }
