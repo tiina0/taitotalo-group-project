@@ -338,10 +338,41 @@ main {
     color: white;
 }
 
+
+
+
+
 /*Here are LANDINGPAGE styles*/
 
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-gap: 5px;
+    overflow: auto;
+}
+
+footer p {
+
+    color: rgb(61, 60, 60);
+
+}
+
+.footerItem {
+    text-align: center;
+}
+
+.wrapper {
+    min-height: calc(70vh - 50px);
+}
+
 .landingBody {
-    height: 100%
+    height: 70%;
+    overflow: hidden;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .logInField {
@@ -350,6 +381,7 @@ main {
     margin-top: 1rem;
     margin-left: 4rem;
     /*border: rgb(128, 102, 63) 1px solid;*/
+    height: 15rem;
 }
 
 .log {
@@ -460,10 +492,12 @@ main {
     margin-top: 8%;
     color: white;
     max-height: 50vh;
+    height: 100%;
 }
 
 #mainLanding img {
     width: 25rem;
+
     opacity: 0.7;
     border-radius: 1px;
 }
@@ -484,20 +518,9 @@ main {
 
 }
 
-.wrapper {
-    min-height: calc(70vh - 50px);
-}
 
-footer {
-    height: 50px;
 
-}
 
-footer p {
-    margin-left: 47%;
-    color: rgb(61, 60, 60);
-
-}
 
 /*Sign UP field*/
 
@@ -555,13 +578,22 @@ fieldset p3 {
     color: rgb(167, 167, 167);
 }
 
+
+
+
+
+
+
 /*Forgot your password field*/
-
-
 
 .passwordRestoreField p {
     padding-left: 13.5rem;
     color: gray;
+}
+
+.passwordRestoreField input {
+    margin-bottom: 2rem;
+    width: 250px;
 }
 
 #resetEmail {
@@ -572,14 +604,8 @@ fieldset p3 {
     padding-bottom: 2rem;
 }
 
-.passwordRestoreField input {
-    margin-bottom: 2rem;
-    width: 250px;
-}
-
 #resetEmail p {
     padding-left: 0;
-
 
 }
 
@@ -592,6 +618,10 @@ fieldset p3 {
     text-decoration: none;
 
 }
+
+
+
+
 
 @media (min-width: 880px) and (max-width: 1200px) {
     .container {
@@ -668,6 +698,116 @@ fieldset p3 {
     #message {
         max-width: 90%;
     }
+
+
+
+
+    /*Landingpage @media mobile*/
+    footer {
+        position: static;
+
+    }
+
+    footer p {
+        width: 120px;
+        margin: 0.5rem auto;
+
+    }
+
+    .wrapper {
+        position: relative;
+        display: block;
+        width: 100%;
+        z-index: -1;
+        padding: 0.2rem auto;
+
+
+    }
+
+    #mainPicture {
+        display: none;
+
+    }
+
+    .log {
+
+
+        width: 250px;
+        margin: 1rem auto;
+
+    }
+
+    .landingNav {
+        background-color: #333;
+        overflow: hidden;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .log h3 {
+        width: 90%;
+    }
+
+    .logInField {
+
+        margin: 0.5rem auto;
+    }
+
+    .landingNav ul {
+        margin-top: 0;
+        padding: 0;
+        width: auto;
+        margin-left: -1rem;
+        margin-left: 1rem;
+        font-size: 0.75rem;
+        display: inline-flex;
+        align-items: center;
+
+    }
+
+    .otherOptions ul {
+        margin-left: 18px;
+    }
+
+    #mainLanding {
+
+        width: 100%;
+        height: 110%;
+
+        margin: 0.2rem auto;
+        margin-bottom: 5rem;
+
+    }
+
+    #social {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+
+    #landingLogo {
+        margin-left: 1rem;
+    }
+
+    #landingLogo img {
+        width: 4rem;
+        margin-top: .2rem;
+        background: #121212;
+    }
+
+    #landingHeader {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+
 
 
 }

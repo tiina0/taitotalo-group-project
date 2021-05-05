@@ -7,30 +7,31 @@
     <meta charset="UTF-8">
     <title>&lt;Landing&gt;</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="landingBody">
-    <div class="wrapper">
-        <div id="landingHeader">
-            <div id="landingLogo">
-                <a href="index.html"> <img src="images/logo2.png" alt=""></a>
-            </div>
-            <nav class="landingNav">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
 
+    <div id="landingHeader">
+        <div id="landingLogo">
+            <a href="index.html"> <img src="images/logo2.png" alt=""></a>
         </div>
+        <nav class="landingNav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
 
+    </div>
+    <div class="wrapper">
 
         <div id="mainLanding">
 
-            <img src="images/meme.jpg" alt="some intro photo">
+            <img id="mainPicture" src="images/meme.jpg" alt="some intro photo">
 
             <div class="logInField">
                 <div class="log">
@@ -56,16 +57,21 @@
 
             </div>
         </div>
+        <footer>
+
+            <div class="footerItem" id="social">
+                <img src="images/facebook.png">
+                <img src="images/instagram.png">
+                <img src="images/pinterest.png">
+                <img src="images/twitter.png">
+            </div>
+            <p class="footerItem">&copy 2021 project4</p>
+        </footer>
     </div>
-    <footer>
-        <div id="social">
-            <img src="images/facebook.png">
-            <img src="images/instagram.png">
-            <img src="images/pinterest.png">
-            <img src="images/twitter.png">
-        </div>
-        <p>&copy 2021 project4</p>
-    </footer>
+
+
+
+
 
     <script src="js/scripts.js">
     </script>
