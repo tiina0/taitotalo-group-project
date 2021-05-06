@@ -722,6 +722,10 @@ fieldset p3 {
         margin: 1rem auto;
     }
 
+    .landingBody {
+        overflow: auto;
+    }
+
     .landingNav {
         background-color: #333;
         overflow: hidden;
@@ -755,9 +759,7 @@ fieldset p3 {
         align-items: center;
     }
 
-    .landingBody {
-        overflow: scroll;
-    }
+
 
     .otherOptions ul {
         margin-left: 18px;
@@ -771,7 +773,7 @@ fieldset p3 {
         margin: 0.2rem auto;
         margin-top: 8%;
         margin-bottom: 5rem;
-        overflow: scroll;
+
     }
 
     #social {
