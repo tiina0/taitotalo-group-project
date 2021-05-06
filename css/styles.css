@@ -817,4 +817,9 @@ fieldset p3 {
         margin: 1rem auto;
     }
 
+    .forgotFieldset p3 {
+        display: block;
+
+
+    }
 }
