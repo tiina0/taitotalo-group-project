@@ -350,15 +350,14 @@ footer {
     bottom: 0;
     width: 100%;
     display: grid;
+    /*footer is grid element for centering elements*/
     grid-template-rows: 50px 50px;
     grid-gap: 5px;
     overflow: auto;
 }
 
 footer p {
-
     color: rgb(61, 60, 60);
-
 }
 
 .footerItem {
@@ -370,7 +369,6 @@ footer p {
 }
 
 .landingBody {
-    height: 70%;
     overflow: hidden;
     font-family: 'Roboto', Arial, sans-serif;
 }
@@ -418,7 +416,6 @@ footer p {
 .otherOptions ul {
     margin-top: 1rem;
     margin-left: 4px;
-    ;
     padding: 0;
 }
 
@@ -432,7 +429,6 @@ footer p {
     display: inline-block;
     text-decoration: none;
     color: white;
-
 }
 
 .otherOptions ul li :visited {
@@ -465,7 +461,6 @@ footer p {
 
 #landingHeader ul {
     display: flex;
-
 }
 
 #landingHeader a {
@@ -474,9 +469,7 @@ footer p {
 }
 
 #landingLogo {
-
     margin-left: -20rem;
-
 }
 
 #landingLogo img {
@@ -497,7 +490,6 @@ footer p {
 
 #mainLanding img {
     width: 25rem;
-
     opacity: 0.7;
     border-radius: 1px;
 }
@@ -506,12 +498,10 @@ footer p {
     display: flex;
     justify-content: space-between;
     margin: auto 45%;
-
     align-items: center;
 }
 
 #social img {
-
     padding-top: 1rem;
     opacity: 1;
     width: 20px;
@@ -567,7 +557,6 @@ fieldset p3 {
 
 #signUp input {
     width: 85%;
-
     margin-bottom: 0.5rem;
 }
 
@@ -711,7 +700,6 @@ fieldset p3 {
     footer p {
         width: 120px;
         margin: 0.5rem auto;
-
     }
 
     .wrapper {
@@ -720,21 +708,15 @@ fieldset p3 {
         width: 100%;
         z-index: -1;
         padding: 0.2rem auto;
-
-
     }
 
     #mainPicture {
         display: none;
-
     }
 
     .log {
-
-
         width: 250px;
         margin: 1rem auto;
-
     }
 
     .landingNav {
@@ -768,7 +750,10 @@ fieldset p3 {
         font-size: 0.75rem;
         display: inline-flex;
         align-items: center;
+    }
 
+    .landingBody {
+        overflow: scroll;
     }
 
     .otherOptions ul {
@@ -779,15 +764,16 @@ fieldset p3 {
 
         width: 100%;
         height: 110%;
-
+        max-height: 75vh;
         margin: 0.2rem auto;
         margin-bottom: 5rem;
-
+        overflow: scroll;
     }
 
     #social {
         width: 100px;
         margin: 0 auto;
+        overflow: hidden;
     }
 
 
@@ -806,6 +792,7 @@ fieldset p3 {
         justify-content: flex-start;
 
     }
+
 
 
 
