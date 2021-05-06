@@ -575,6 +575,9 @@ fieldset p3 {
 
 /*Forgot your password field*/
 
+
+
+
 .passwordRestoreField p {
     padding-left: 13.5rem;
     color: gray;
@@ -766,6 +769,7 @@ fieldset p3 {
         height: 110%;
         max-height: 75vh;
         margin: 0.2rem auto;
+        margin-top: 8%;
         margin-bottom: 5rem;
         overflow: scroll;
     }
@@ -793,8 +797,24 @@ fieldset p3 {
 
     }
 
+    .passwordRestoreField {
+        display: flex;
+        width: 18rem;
+        flex-direction: column;
+        margin: 1rem auto;
+    }
 
+    .passwordRestoreField p {
+        padding-left: 0;
+    }
 
+    #resetEmail {
+        margin-left: 0;
+    }
 
+    .forgotFieldset {
+        width: 80%;
+        margin: 1rem auto;
+    }
 
 }
