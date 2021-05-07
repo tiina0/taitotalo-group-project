@@ -521,8 +521,8 @@ fieldset {
     /*border: brown 1px solid;*/
 }
 
-fieldset p3 {
-    padding-left: 5.5rem;
+fieldset p {
+    padding-right: 1rem;
 
 }
 
@@ -539,6 +539,10 @@ fieldset p3 {
 
 }
 
+.signUpBtns :hover {
+    cursor: pointer;
+}
+
 .signUpBtns :visited {
     color: white;
 }
@@ -546,6 +550,8 @@ fieldset p3 {
 .signUpBtns a {
     text-decoration: none;
 }
+
+
 
 #signUp {
     width: 230px;
