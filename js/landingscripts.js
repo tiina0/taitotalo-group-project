@@ -4,7 +4,7 @@ var closeMenuBtnLanding = document.getElementById('closeMenuBtnLanding');
 
 
 
-
+/*For triggering menu in a mobile view*/
 menuBtnLanding.onclick = function () {
     landingNav.classList.add('show');
     console.log('Noo ei tule menu lahti')

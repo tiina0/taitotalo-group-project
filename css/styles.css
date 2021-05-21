@@ -47,6 +47,10 @@ header a:hover {
     text-decoration: underline;
 }
 
+main {
+    width: 75%;
+}
+
 #logo {
     text-align: center;
     width: 33.3%;
@@ -70,8 +74,6 @@ header a:hover {
     display: block;
 }
 
-
-
 /* Styles for container containing sidebar and <main> element */
 
 .container {
@@ -80,7 +82,6 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
-
 
 }
 
@@ -124,9 +125,7 @@ header a:hover {
     text-decoration: underline;
 }*/
 
-main {
-    width: 75%;
-}
+
 
 /* Styles for posts on home/index page */
 
@@ -401,18 +400,6 @@ footer p {
     margin-left: 0.3rem;
 }
 
-#landingNav ul {
-    width: 27rem;
-
-}
-
-#landingNav ul li {
-    list-style-type: none;
-    display: inline;
-    padding: 1rem;
-    text-transform: uppercase;
-}
-
 .log input {
     width: 90%;
     margin-top: 0.2rem;
@@ -448,6 +435,18 @@ footer p {
 .otherOptions ul li:first-child {
     padding-right: 0.3rem;
     border-right: white solid 1px;
+}
+
+#landingNav ul {
+    width: 27rem;
+
+}
+
+#landingNav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1rem;
+    text-transform: uppercase;
 }
 
 #hambMenuBtnLanding {
@@ -528,7 +527,6 @@ footer p {
     padding-top: 1rem;
     opacity: 1;
     width: 20px;
-
 }
 
 
@@ -575,7 +573,6 @@ fieldset p {
 }
 
 
-
 #signUp {
     width: 230px;
     margin: auto;
@@ -601,7 +598,6 @@ fieldset p {
 
 
 /*Forgot your password field*/
-
 
 
 
@@ -652,16 +648,16 @@ fieldset p {
         width: 80%;
     }
 
-    #message {
-        max-width: 100%;
-    }
-
     .comment-field {
         max-width: 60%;
     }
 
     .hidden-desktop {
         display: none;
+    }
+
+    #message {
+        max-width: 100%;
     }
 }
 
@@ -680,6 +676,15 @@ fieldset p {
         margin-bottom: 20px;
     }
 
+    .card {
+        margin: .5rem auto 1rem auto;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
 
     #sidebar {
         border-radius: 0;
@@ -696,14 +701,11 @@ fieldset p {
         margin-bottom: 0px;
     }
 
-
-
     #sidebar ul {
         margin-top: 0;
         font-size: 0.75rem;
         display: inline-flex;
         align-items: center;
-
     }
 
     #sidebar ul li {
@@ -715,16 +717,6 @@ fieldset p {
         max-width: 33.3%;
     }
 
-    .card {
-        margin: .5rem auto 1rem auto;
-        width: 100%;
-        min-height: 300px;
-    }
-
-    .comment-field {
-        max-width: 60%;
-    }
-
     #message {
         max-width: 90%;
     }
@@ -732,7 +724,12 @@ fieldset p {
 
 
 
+
+
     /*Landingpage @media mobile*/
+
+
+
     footer {
         position: static;
 
@@ -748,10 +745,7 @@ fieldset p {
         display: block;
         width: 100%;
         z-index: -1;
-
     }
-
-
 
     .log {
         width: 250px;
@@ -767,7 +761,6 @@ fieldset p {
     }
 
     .logInField {
-
         margin: 0.5rem auto;
     }
 
@@ -776,18 +769,26 @@ fieldset p {
         margin-left: 18px;
     }
 
-    /*#landingNav {
-        background-color: #333;
-        overflow: hidden;
-        height: 60px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+    .passwordRestoreField {
         display: flex;
-        justify-content: center;
+        width: 18rem;
+        flex-direction: column;
+        margin: 1rem auto;
     }
-*/
+
+    .passwordRestoreField p {
+        padding-left: 0;
+    }
+
+    .forgotFieldset {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .forgotFieldset p3 {
+        display: block;
+    }
+
     #landingNav {
         position: absolute;
         background-color: #232323;
@@ -796,8 +797,6 @@ fieldset p {
         width: 100%;
         transition: top .5s;
         z-index: 9999;
-
-
     }
 
     #landingNav.show {
@@ -816,8 +815,6 @@ fieldset p {
         width: 100%;
     }
 
-
-
     #closeMenuBtnLanding {
         border: none;
         float: right;
@@ -827,24 +824,19 @@ fieldset p {
         height: 30px;
         margin-right: 1rem;
         margin-top: 1rem;
-
     }
 
     #closeMenuBtnLanding:hover {
         cursor: pointer;
     }
 
-
-
     #mainLanding {
-
         width: 100%;
         height: 110%;
         max-height: 75vh;
         margin: 0.2rem auto;
         margin-top: 8%;
         margin-bottom: 5rem;
-
     }
 
     #social {
@@ -852,7 +844,6 @@ fieldset p {
         margin: 0 auto;
         overflow: hidden;
     }
-
 
     #landingLogo {
         margin-left: 3rem;
@@ -871,16 +862,7 @@ fieldset p {
         padding-bottom: 20px;
     }
 
-    .passwordRestoreField {
-        display: flex;
-        width: 18rem;
-        flex-direction: column;
-        margin: 1rem auto;
-    }
 
-    .passwordRestoreField p {
-        padding-left: 0;
-    }
 
     #resetEmail {
         margin-left: 0;
@@ -890,14 +872,4 @@ fieldset p {
         display: none;
     }
 
-    .forgotFieldset {
-        width: 80%;
-        margin: 1rem auto;
-    }
-
-    .forgotFieldset p3 {
-        display: block;
-
-
-    }
 }
