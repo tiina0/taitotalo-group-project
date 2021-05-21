@@ -35,6 +35,7 @@ header {
     padding: 20px;
     background-color: #232323;
     border-bottom: 1px solid black;
+
 }
 
 header a {
@@ -69,13 +70,18 @@ header a:hover {
     display: block;
 }
 
+
+
 /* Styles for container containing sidebar and <main> element */
 
 .container {
+
     width: 59%;
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
+
+
 }
 
 #sidebar {
@@ -395,12 +401,12 @@ footer p {
     margin-left: 0.3rem;
 }
 
-.landingNav ul {
+#landingNav ul {
     width: 27rem;
-    margin-left: 70%;
+
 }
 
-.landingNav ul li {
+#landingNav ul li {
     list-style-type: none;
     display: inline;
     padding: 1rem;
@@ -444,10 +450,26 @@ footer p {
     border-right: white solid 1px;
 }
 
+#hambMenuBtnLanding {
+    background-image: url('../images/hamburgermenu.png');
+    padding: 0;
+    border-radius: 0;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    border: none;
+    width: 25px;
+    height: 25px;
+
+}
+
+#hambMenuBtnLanding:hover {
+    cursor: pointer;
+}
+
 #landingHeader {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     top: 0;
     height: 30px;
     align-items: center;
@@ -469,7 +491,8 @@ footer p {
 }
 
 #landingLogo {
-    margin-left: -20rem;
+
+    z-index: 10000;
 }
 
 #landingLogo img {
@@ -577,8 +600,6 @@ fieldset p {
 
 
 
-
-
 /*Forgot your password field*/
 
 
@@ -618,7 +639,12 @@ fieldset p {
 }
 
 
-
+/*Hiding menu button on a big page <1200px*/
+@media (min-width:1200px) {
+    .hidden-desktop {
+        display: none;
+    }
+}
 
 
 @media (min-width: 880px) and (max-width: 1200px) {
@@ -632,6 +658,10 @@ fieldset p {
 
     .comment-field {
         max-width: 60%;
+    }
+
+    .hidden-desktop {
+        display: none;
     }
 }
 
@@ -650,6 +680,7 @@ fieldset p {
         margin-bottom: 20px;
     }
 
+
     #sidebar {
         border-radius: 0;
         border-left: none;
@@ -664,6 +695,8 @@ fieldset p {
         order: 2;
         margin-bottom: 0px;
     }
+
+
 
     #sidebar ul {
         margin-top: 0;
@@ -718,9 +751,7 @@ fieldset p {
 
     }
 
-    #mainPicture {
-        display: none;
-    }
+
 
     .log {
         width: 250px;
@@ -731,7 +762,21 @@ fieldset p {
         overflow: auto;
     }
 
-    .landingNav {
+    .log h3 {
+        width: 90%;
+    }
+
+    .logInField {
+
+        margin: 0.5rem auto;
+    }
+
+
+    .otherOptions ul {
+        margin-left: 18px;
+    }
+
+    /*#landingNav {
         background-color: #333;
         overflow: hidden;
         height: 60px;
@@ -742,33 +787,54 @@ fieldset p {
         display: flex;
         justify-content: center;
     }
+*/
+    #landingNav {
+        position: absolute;
+        background-color: #232323;
+        top: -30rem;
+
+        width: 100%;
+        transition: top .5s;
+        z-index: 9999;
 
 
-    .log h3 {
-        width: 90%;
     }
 
-    .logInField {
-
-        margin: 0.5rem auto;
+    #landingNav.show {
+        height: 100vh;
+        width: 100vw;
+        top: 0;
     }
 
-    .landingNav ul {
-        margin-top: 0;
-        padding: 0;
-        width: auto;
-        margin-left: -1rem;
-        margin-left: 1rem;
-        font-size: 0.75rem;
-        display: inline-flex;
+    #landingNav ul {
+        padding-top: 8rem;
+        padding-left: 0;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
 
 
-    .otherOptions ul {
-        margin-left: 18px;
+    #closeMenuBtnLanding {
+        border: none;
+        float: right;
+        background-image: url('../images/closeBtn.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+        margin-top: 1rem;
+
     }
+
+    #closeMenuBtnLanding:hover {
+        cursor: pointer;
+    }
+
+
 
     #mainLanding {
 
@@ -789,7 +855,7 @@ fieldset p {
 
 
     #landingLogo {
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
 
     #landingLogo img {
@@ -800,8 +866,9 @@ fieldset p {
 
     #landingHeader {
         display: flex;
-        justify-content: flex-start;
-
+        justify-content: space-between;
+        padding-left: 0;
+        padding-bottom: 20px;
     }
 
     .passwordRestoreField {
@@ -817,6 +884,10 @@ fieldset p {
 
     #resetEmail {
         margin-left: 0;
+    }
+
+    #mainPicture {
+        display: none;
     }
 
     .forgotFieldset {
