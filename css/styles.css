@@ -514,6 +514,15 @@ footer p {
     width: 25rem;
 }
 
+#aboutUsMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #38b6ff;
+    margin-top: 14rem;
+
+}
+
 #social {
     display: flex;
     justify-content: space-between;
