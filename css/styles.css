@@ -10,8 +10,8 @@ body {
 /* general styles for buttons on all pages */
 
 button {
-    border-left: 1px solid f000;
-    border-top: 1px solid f000;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
     border-bottom: none;
     border-right: none;
     margin-right: .15rem;
@@ -35,6 +35,7 @@ header {
     padding: 20px;
     background-color: #232323;
     border-bottom: 1px solid black;
+
 }
 
 header a {
@@ -44,6 +45,10 @@ header a {
 
 header a:hover {
     text-decoration: underline;
+}
+
+main {
+    width: 75%;
 }
 
 #logo {
@@ -72,10 +77,12 @@ header a:hover {
 /* Styles for container containing sidebar and <main> element */
 
 .container {
+
     width: 59%;
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
+
 }
 
 #sidebar {
@@ -118,9 +125,7 @@ header a:hover {
     text-decoration: underline;
 }*/
 
-main {
-    width: 75%;
-}
+
 
 /* Styles for posts on home/index page */
 
@@ -338,10 +343,39 @@ main {
     color: white;
 }
 
+
+
+
+
 /*Here are LANDINGPAGE styles*/
 
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    /*footer is grid element for centering elements*/
+    grid-template-rows: 50px 50px;
+    grid-gap: 5px;
+    overflow: auto;
+}
+
+footer p {
+    color: rgb(61, 60, 60);
+}
+
+.footerItem {
+    text-align: center;
+}
+
+.wrapper {
+    min-height: calc(70vh - 50px);
+}
+
 .landingBody {
-    height: 100%
+    overflow: hidden;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .logInField {
@@ -350,6 +384,7 @@ main {
     margin-top: 1rem;
     margin-left: 4rem;
     /*border: rgb(128, 102, 63) 1px solid;*/
+    height: 15rem;
 }
 
 .log {
@@ -365,18 +400,6 @@ main {
     margin-left: 0.3rem;
 }
 
-.landingNav ul {
-    width: 27rem;
-    margin-left: 70%;
-}
-
-.landingNav ul li {
-    list-style-type: none;
-    display: inline;
-    padding: 1rem;
-    text-transform: uppercase;
-}
-
 .log input {
     width: 90%;
     margin-top: 0.2rem;
@@ -386,7 +409,6 @@ main {
 .otherOptions ul {
     margin-top: 1rem;
     margin-left: 4px;
-    ;
     padding: 0;
 }
 
@@ -400,7 +422,6 @@ main {
     display: inline-block;
     text-decoration: none;
     color: white;
-
 }
 
 .otherOptions ul li :visited {
@@ -416,10 +437,38 @@ main {
     border-right: white solid 1px;
 }
 
+#landingNav ul {
+    width: 27rem;
+
+}
+
+#landingNav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+#hambMenuBtnLanding {
+    background-image: url('../images/hamburgermenu.png');
+    padding: 0;
+    border-radius: 0;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    border: none;
+    width: 25px;
+    height: 25px;
+
+}
+
+#hambMenuBtnLanding:hover {
+    cursor: pointer;
+}
+
 #landingHeader {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     top: 0;
     height: 30px;
     align-items: center;
@@ -433,7 +482,6 @@ main {
 
 #landingHeader ul {
     display: flex;
-
 }
 
 #landingHeader a {
@@ -443,8 +491,7 @@ main {
 
 #landingLogo {
 
-    margin-left: -20rem;
-
+    z-index: 10000;
 }
 
 #landingLogo img {
@@ -460,44 +507,38 @@ main {
     margin-top: 8%;
     color: white;
     max-height: 50vh;
+    height: 100%;
 }
 
 #mainLanding img {
     width: 25rem;
-    opacity: 0.7;
-    border-radius: 1px;
+}
+
+#aboutUsMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #38b6ff;
+    margin-top: 14rem;
+
 }
 
 #social {
     display: flex;
     justify-content: space-between;
     margin: auto 45%;
-
     align-items: center;
 }
 
 #social img {
-
     padding-top: 1rem;
     opacity: 1;
     width: 20px;
-
 }
 
-.wrapper {
-    min-height: calc(70vh - 50px);
-}
 
-footer {
-    height: 50px;
 
-}
 
-footer p {
-    margin-left: 47%;
-    color: rgb(61, 60, 60);
-
-}
 
 /*Sign UP field*/
 
@@ -508,8 +549,8 @@ fieldset {
     /*border: brown 1px solid;*/
 }
 
-fieldset p3 {
-    padding-left: 5.5rem;
+fieldset p {
+    padding-right: 1rem;
 
 }
 
@@ -526,6 +567,10 @@ fieldset p3 {
 
 }
 
+.signUpBtns :hover {
+    cursor: pointer;
+}
+
 .signUpBtns :visited {
     color: white;
 }
@@ -533,6 +578,7 @@ fieldset p3 {
 .signUpBtns a {
     text-decoration: none;
 }
+
 
 #signUp {
     width: 230px;
@@ -544,7 +590,6 @@ fieldset p3 {
 
 #signUp input {
     width: 85%;
-
     margin-bottom: 0.5rem;
 }
 
@@ -555,6 +600,10 @@ fieldset p3 {
     color: rgb(167, 167, 167);
 }
 
+
+
+
+
 /*Forgot your password field*/
 
 
@@ -562,6 +611,11 @@ fieldset p3 {
 .passwordRestoreField p {
     padding-left: 13.5rem;
     color: gray;
+}
+
+.passwordRestoreField input {
+    margin-bottom: 2rem;
+    width: 250px;
 }
 
 #resetEmail {
@@ -572,14 +626,8 @@ fieldset p3 {
     padding-bottom: 2rem;
 }
 
-.passwordRestoreField input {
-    margin-bottom: 2rem;
-    width: 250px;
-}
-
 #resetEmail p {
     padding-left: 0;
-
 
 }
 
@@ -593,17 +641,30 @@ fieldset p3 {
 
 }
 
+
+/*Hiding menu button on a big page <1200px*/
+@media (min-width:1200px) {
+    .hidden-desktop {
+        display: none;
+    }
+}
+
+
 @media (min-width: 880px) and (max-width: 1200px) {
     .container {
         width: 80%;
     }
 
-    #message {
-        max-width: 100%;
-    }
-
     .comment-field {
         max-width: 60%;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+
+    #message {
+        max-width: 100%;
     }
 }
 
@@ -622,12 +683,21 @@ fieldset p3 {
         margin-bottom: 20px;
     }
 
+    .card {
+        margin: .5rem auto 1rem auto;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
+
     #sidebar {
         border-radius: 0;
         border-left: none;
         border-right: none;
         border-bottom: none;
-        width: 16;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -643,7 +713,6 @@ fieldset p3 {
         font-size: 0.75rem;
         display: inline-flex;
         align-items: center;
-
     }
 
     #sidebar ul li {
@@ -655,19 +724,159 @@ fieldset p3 {
         max-width: 33.3%;
     }
 
-    .card {
-        margin: .5rem auto 1rem auto;
-        width: 100%;
-        min-height: 300px;
-    }
-
-    .comment-field {
-        max-width: 60%;
-    }
-
     #message {
         max-width: 90%;
     }
 
+
+
+
+
+
+    /*Landingpage @media mobile*/
+
+
+
+    footer {
+        position: static;
+
+    }
+
+    footer p {
+        width: 120px;
+        margin: 0.5rem auto;
+    }
+
+    .wrapper {
+        position: relative;
+        display: block;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .log {
+        width: 250px;
+        margin: 1rem auto;
+    }
+
+    .landingBody {
+        overflow: auto;
+    }
+
+    .log h3 {
+        width: 90%;
+    }
+
+    .logInField {
+        margin: 0.5rem auto;
+    }
+
+
+    .otherOptions ul {
+        margin-left: 18px;
+    }
+
+    .passwordRestoreField {
+        display: flex;
+        width: 18rem;
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+
+    .passwordRestoreField p {
+        padding-left: 0;
+    }
+
+    .forgotFieldset {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .forgotFieldset p3 {
+        display: block;
+    }
+
+    #landingNav {
+        position: absolute;
+        background-color: #232323;
+        top: -30rem;
+
+        width: 100%;
+        transition: top .5s;
+        z-index: 9999;
+    }
+
+    #landingNav.show {
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+    }
+
+    #landingNav ul {
+        padding-top: 8rem;
+        padding-left: 0;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #closeMenuBtnLanding {
+        border: none;
+        float: right;
+        background-image: url('../images/closeBtn.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    #closeMenuBtnLanding:hover {
+        cursor: pointer;
+    }
+
+    #mainLanding {
+        width: 100%;
+        height: 110%;
+        max-height: 75vh;
+        margin: 0.2rem auto;
+        margin-top: 8%;
+        margin-bottom: 5rem;
+    }
+
+    #social {
+        width: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #landingLogo {
+        margin-left: 3rem;
+    }
+
+    #landingLogo img {
+        width: 4rem;
+        margin-top: .2rem;
+        background: #121212;
+    }
+
+    #landingHeader {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+
+
+    #resetEmail {
+        margin-left: 0;
+    }
+
+    #mainPicture {
+        display: none;
+    }
 
 }
