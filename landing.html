@@ -1,0 +1,80 @@
+<!-- HTML prototype for the landing and login page of the app -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;Landing&gt;</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="landingBody">
+
+    <div id="landingHeader">
+        <div id="landingLogo">
+            <a href="index.html"> <img src="images/logo2.png" alt=""></a>
+        </div>
+        <nav id="landingNav">
+
+            <button type="button" id="closeMenuBtnLanding" class="hidden-desktop"></button>
+            <ul>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="https://ourwebsiteproject.wordpress.com/blog/" target="_blank">Blog</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <button type="button" id="hambMenuBtnLanding" class="hidden-desktop"></button>
+    </div>
+    <div class="wrapper">
+
+        <div id="mainLanding">
+
+            <img id="mainPicture" src="images/bestplace10.png" alt="some intro photo">
+
+            <div class="logInField">
+                <div class="log">
+                    <h3>Log in</h3>
+                    <label id="username">Username or Email</label>
+                    <br>
+                    <input type="text" name="username">
+                    <br>
+                    <label id="password">Password</label>
+                    <br>
+                    <input type="password" name="password">
+                    <button>Sign In</button>
+                    <div class="otherOptions">
+                        <ul>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="forgotpassword.html">Forgot password?</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+
+            <div class="footerItem" id="social">
+                <img src="images/facebook.png" alt="Fb icon">
+                <img src="images/instagram.png" alt="Instagram icon">
+                <img src="images/pinterest.png" alt="Pinterest icon">
+                <img src="images/twitter.png" alt="twotter icon">
+            </div>
+            <p class="footerItem">&copy; 2021 project4</p>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="js/landingscripts.js">
+    </script>
+
+</body>
+
+</html>

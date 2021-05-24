@@ -1,8 +1,7 @@
 # taitotalo-group-project
 
-This is a project that me and three of my classmates are working on as part of our software development studies at Taitotalo.
-We are developing a photo sharing web app where users can share photos in private groups.
+tiina-css
 
-You can read more about the project here:
+Hamidin ehdotuksen pohjalta päädyin muokkaamaan omia alkuperäisiä tyylejä niin, että tuo sivunavigaatio siirtyy alareunaan mobiililaitteilla. Poistin light moden nyt kokonaan kun voidaan tehdä se sitten kunnolla myöhemmin. Näissä tiedostoissa kaikkien sivujen pitäisi periaatteessa toimia.
 
-https://ourwebsiteproject.wordpress.com/
+
