@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding-top: 65px;
@@ -6,6 +7,34 @@ body {
     overflow-y: scroll;
 }
 
+=======
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding-top: 65px;
+    background-color: #121212;
+    overflow-y: scroll;
+}
+
+
+/* general styles for buttons on all pages */
+
+button {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    margin-right: .15rem;
+    padding: .5rem;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #232323;
+    box-shadow: 2px 2px 2px #131313;
+}
+
+/* Styles for all content in header */
+
+>>>>>>> master
 header {
     position: fixed;
     top: 0;
@@ -14,11 +43,17 @@ header {
     display: flex;
     width: 100%;
     padding: 20px;
+<<<<<<< HEAD
     margin: 0 auto 10px auto;
     margin-bottom: 10px;
     background-color: #323232;
     color: white;
     border-bottom: 1px solid black;
+=======
+    background-color: #232323;
+    border-bottom: 1px solid black;
+
+>>>>>>> master
 }
 
 header a {
@@ -31,6 +66,7 @@ header a:hover {
 }
 
 main {
+<<<<<<< HEAD
     max-width: 75%;
     width: 100%;
     position: static; 
@@ -45,10 +81,48 @@ main {
     justify-content: space-between;
     margin: 10px auto;
     padding-top: 20px;
+=======
+    width: 75%;
+}
+
+#logo {
+    text-align: center;
+    width: 33.3%;
+    display: block;
+}
+
+#logo img {
+    width: 4rem;
+    margin-top: .2rem;
+}
+
+#search-bar {
+    text-align: center;
+    width: 33.3%;
+    display: block;
+}
+
+#icons-right {
+    text-align: center;
+    width: 33.3%;
+    display: block;
+}
+
+/* Styles for container containing sidebar and <main> element */
+
+.container {
+
+    width: 59%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+
+>>>>>>> master
 }
 
 #sidebar {
     min-width: 23%;
+<<<<<<< HEAD
     /* padding: 0 2.75rem; */
     position: sticky;
     top: 95px;
@@ -79,6 +153,70 @@ main {
     background-color: #323232;
     margin-bottom: 2rem;
     color: white;
+=======
+    position: sticky;
+    top: 95px;
+    background-color: #232323;
+    display: block;
+    height: 600px;
+    border-radius: .25rem;
+    box-shadow: 5px 5px 5px #101010;
+}
+
+#sidebar ul {
+    margin-top: 5rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    text-align: center;
+    margin: .25rem;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#sidebar ul :hover {
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    border-radius: 2px;
+}
+
+/*#sidebar ul li a:hover {
+    text-decoration: underline;
+}*/
+
+
+
+/* Styles for posts on home/index page */
+
+.post {
+    background-color: #232323;
+    padding-bottom: 1rem;
+    margin-bottom: 25px;
+    color: white;
+    border-radius: .25rem;
+    box-shadow: 5px 5px 5px #101010;
+}
+
+.post-header-info {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background-color: #232323;
+    color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+.post-header-info p {
+    margin: 0;
+>>>>>>> master
 }
 
 .post img {
@@ -87,6 +225,7 @@ main {
 
 .description {
     padding: 0 1rem;
+<<<<<<< HEAD
     /* color: #fff; */
 }
 
@@ -204,10 +343,341 @@ main {
 }
 
 #sidebar ul li a {
+=======
+    font-weight: 300;
+}
+
+.comment-area {
+    padding-left: 1rem;
+}
+
+.comment {
+    display: flex;
+}
+
+.comment-field {
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    max-width: 75%;
+    background-color: #232323;
+}
+
+.comment-submit-button {
+    margin: 1.75rem 1rem;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 8px;
+    background-color: #232323;
+    overflow: auto;
+}
+
+.posted-comments {
+    font-weight: 300;
+    background-color: #272727;
+    box-shadow: 2px 2px 2px #131313;
+    width: 90%;
+    padding: 0;
+    margin: 0 1rem;
+    border-radius: .5rem;
+}
+
+.posted-comments p {
+    padding: .5rem;
+}
+
+.comment-poster {
+    font-weight: 500;
+}
+
+
+/* Styles for Share Photo page */
+
+.sharePhoto {
+    display: block;
+    min-height: 400px;
+    background-color: #232323;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.dragPhotoArea {
+    height: 250px;
+    width: auto;
+    border: dashed rgb(92, 91, 91);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.commentNewPhoto>textarea {
+    box-sizing: border-box;
+    width: 93%;
+    min-width: 5%;
+    margin: .5rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #232323;
+}
+
+
+
+
+/*SHARE PHOTO temporary sample*/
+
+.sharePhotoBtns {
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
+}
+
+.sharePhotoBtns:hover {
+    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    background-color: #0061a7;
+}
+
+.sharePhotoBtns:active {
+    position: relative;
+    top: 1px;
+}
+
+#shareLink {
+    background-color: #302f2f;
+
+    border-radius: 2px;
+
+
+}
+
+/* Styles for My Groups page */
+
+.groups-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card {
+    background: #323232;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px #131313;
+    color: white;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    width: 200px;
+    min-height: 350px;
+    padding-bottom: 1rem;
+}
+
+.card-header-img img {
+    width: 100%;
+}
+
+.card-header-name {
+    width: 100%;
+    text-align: center;
+}
+
+.card-description {
+    margin: 1rem;
+    border-bottom: 2px solid black;
+    font-size: 14px;
+    height: 120px;
+}
+
+.card-footer {
+    padding: .3rem;
+}
+
+.card-footer-btn {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: .5rem;
+    padding: 0.5rem;
+    background-color: #232323;
+}
+
+/* Basic styles for my account, support, and contact pages */
+
+.content {
+    background-color: #232323;
+    color: #fff;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    box-shadow: 5px 5px 5px #101010;
+}
+
+.content a {
+    color: white;
+}
+
+
+
+
+
+/*Here are LANDINGPAGE styles*/
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    /*footer is grid element for centering elements*/
+    grid-template-rows: 50px 50px;
+    grid-gap: 5px;
+    overflow: auto;
+}
+
+footer p {
+    color: rgb(61, 60, 60);
+}
+
+.footerItem {
+    text-align: center;
+}
+
+.wrapper {
+    min-height: calc(70vh - 50px);
+}
+
+.landingBody {
+    overflow: hidden;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.logInField {
+    width: 15rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    /*border: rgb(128, 102, 63) 1px solid;*/
+    height: 15rem;
+}
+
+.log {
+    position: fixed;
+    margin: 0 auto;
+    margin-top: 0;
+    /*border: 1px solid rgb(128, 128, 128);*/
+}
+
+.log button {
+    margin-top: 1.5rem;
+    width: 90%;
+    margin-left: 0.3rem;
+}
+
+.log input {
+    width: 90%;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.otherOptions ul {
+    margin-top: 1rem;
+    margin-left: 4px;
+    padding: 0;
+}
+
+.otherOptions ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.otherOptions ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.otherOptions ul li :visited {
+    color: rgb(255, 255, 255);
+}
+
+.otherOptions ul li :hover {
+    color: rgb(212, 205, 205);
+}
+
+.otherOptions ul li:first-child {
+    padding-right: 0.3rem;
+    border-right: white solid 1px;
+}
+
+#landingNav ul {
+    width: 27rem;
+
+}
+
+#landingNav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+#hambMenuBtnLanding {
+    background-image: url('../images/hamburgermenu.png');
+    padding: 0;
+    border-radius: 0;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    border: none;
+    width: 25px;
+    height: 25px;
+
+}
+
+#hambMenuBtnLanding:hover {
+    cursor: pointer;
+}
+
+#landingHeader {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: #232323;
+    border-bottom: 1px solid rgb(56, 55, 55);
+
+}
+
+#landingHeader ul {
+    display: flex;
+}
+
+#landingHeader a {
+>>>>>>> master
     color: white;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 #sidebar ul li a:hover {
     text-decoration: underline;
 }
@@ -232,3 +702,396 @@ main {
     margin-right: 3rem;
     display: block;
 }
+=======
+#landingLogo {
+
+    z-index: 10000;
+}
+
+#landingLogo img {
+    width: 4rem;
+    margin-top: .2rem;
+}
+
+#mainLanding {
+    display: flex;
+    width: 700px;
+    /*position: fixed;*/
+    margin: auto;
+    margin-top: 8%;
+    color: white;
+    max-height: 50vh;
+    height: 100%;
+}
+
+#mainLanding img {
+    width: 25rem;
+}
+
+#aboutUsMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #38b6ff;
+    margin-top: 14rem;
+
+}
+
+#social {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 45%;
+    align-items: center;
+}
+
+#social img {
+    padding-top: 1rem;
+    opacity: 1;
+    width: 20px;
+}
+
+
+
+
+
+/*Sign UP field*/
+
+
+fieldset {
+    border: none;
+    width: 100%;
+    /*border: brown 1px solid;*/
+}
+
+fieldset p {
+    padding-right: 1rem;
+
+}
+
+.signUpBtns {
+    width: 88%;
+    display: flex;
+    justify-content: right;
+
+}
+
+.signUpBtns button {
+    margin-left: 0.5rem;
+
+
+}
+
+.signUpBtns :hover {
+    cursor: pointer;
+}
+
+.signUpBtns :visited {
+    color: white;
+}
+
+.signUpBtns a {
+    text-decoration: none;
+}
+
+
+#signUp {
+    width: 230px;
+    margin: auto;
+    margin-top: 2rem;
+    height: 90%;
+    /* border: cadetblue 1px solid;*/
+}
+
+#signUp input {
+    width: 85%;
+    margin-bottom: 0.5rem;
+}
+
+
+
+#signUp p {
+    font-size: 13px;
+    color: rgb(167, 167, 167);
+}
+
+
+
+
+
+/*Forgot your password field*/
+
+
+
+.passwordRestoreField p {
+    padding-left: 13.5rem;
+    color: gray;
+}
+
+.passwordRestoreField input {
+    margin-bottom: 2rem;
+    width: 250px;
+}
+
+#resetEmail {
+    width: 230px;
+    margin: auto;
+    margin-top: 2rem;
+    height: 90%;
+    padding-bottom: 2rem;
+}
+
+#resetEmail p {
+    padding-left: 0;
+
+}
+
+#resetEmail p :visited {
+    color: white;
+    text-decoration: none;
+}
+
+#resetEmail a {
+    text-decoration: none;
+
+}
+
+
+/*Hiding menu button on a big page <1200px*/
+@media (min-width:1200px) {
+    .hidden-desktop {
+        display: none;
+    }
+}
+
+
+@media (min-width: 880px) and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+
+    #message {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 880px) {
+    .container {
+        margin: 20px 0 0 0;
+        width: 100%;
+        flex-direction: column;
+        min-height: calc(100vh - 80px);
+    }
+
+    main {
+        margin: 0 auto;
+        width: 90%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        margin: .5rem auto 1rem auto;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .comment-field {
+        max-width: 60%;
+    }
+
+    #sidebar {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        order: 2;
+        margin-bottom: 0px;
+    }
+
+    #sidebar ul {
+        margin-top: 0;
+        font-size: 0.75rem;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    #sidebar ul li {
+
+        padding: 0.5rem;
+    }
+
+    #search-bar input {
+        max-width: 33.3%;
+    }
+
+    #message {
+        max-width: 90%;
+    }
+
+
+
+
+
+
+    /*Landingpage @media mobile*/
+
+
+
+    footer {
+        position: static;
+
+    }
+
+    footer p {
+        width: 120px;
+        margin: 0.5rem auto;
+    }
+
+    .wrapper {
+        position: relative;
+        display: block;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .log {
+        width: 250px;
+        margin: 1rem auto;
+    }
+
+    .landingBody {
+        overflow: auto;
+    }
+
+    .log h3 {
+        width: 90%;
+    }
+
+    .logInField {
+        margin: 0.5rem auto;
+    }
+
+
+    .otherOptions ul {
+        margin-left: 18px;
+    }
+
+    .passwordRestoreField {
+        display: flex;
+        width: 18rem;
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+
+    .passwordRestoreField p {
+        padding-left: 0;
+    }
+
+    .forgotFieldset {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .forgotFieldset p3 {
+        display: block;
+    }
+
+    #landingNav {
+        position: absolute;
+        background-color: #232323;
+        top: -30rem;
+
+        width: 100%;
+        transition: top .5s;
+        z-index: 9999;
+    }
+
+    #landingNav.show {
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+    }
+
+    #landingNav ul {
+        padding-top: 8rem;
+        padding-left: 0;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #closeMenuBtnLanding {
+        border: none;
+        float: right;
+        background-image: url('../images/closeBtn.png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    #closeMenuBtnLanding:hover {
+        cursor: pointer;
+    }
+
+    #mainLanding {
+        width: 100%;
+        height: 110%;
+        max-height: 75vh;
+        margin: 0.2rem auto;
+        margin-top: 8%;
+        margin-bottom: 5rem;
+    }
+
+    #social {
+        width: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #landingLogo {
+        margin-left: 3rem;
+    }
+
+    #landingLogo img {
+        width: 4rem;
+        margin-top: .2rem;
+        background: #121212;
+    }
+
+    #landingHeader {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+
+
+    #resetEmail {
+        margin-left: 0;
+    }
+
+    #mainPicture {
+        display: none;
+    }
+
+}
+>>>>>>> master
