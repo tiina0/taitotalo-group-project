@@ -473,7 +473,7 @@ footer p {
     border: none;
     width: 25px;
     height: 25px;
-
+    background-color: #232323;
 }
 
 #hambMenuBtnLanding:hover {
@@ -842,10 +842,11 @@ fieldset p {
         float: right;
         background-image: url('../images/closeBtn.png');
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 46px;
         margin-right: 1rem;
         margin-top: 1rem;
+        background-color: #232323;
     }
 
     #closeMenuBtnLanding:hover {
